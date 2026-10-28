@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pareto Pipeline | Done-For-You B2B Lead Gen</title>
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta name="description" content="We build and run your entire client acquisition engine so you only show up to talk to buyers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=" js"</script>
+<style>
+:root{
+  --bg:#ffffff; --fg:#000000; --muted:#666666; --dim:#999999; --line:#dddddd; --panel:#f7f7f7; --panel2:#f2f2f2;
+  --font:"Geist","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --r:20px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--muted);font-family:var(--font);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{color:var(--fg);margin:0;font-weight:600;letter-spacing:-0.035em;line-height:1.05}
+p{margin:0} a{color:inherit;text-decoration:none} ul{list-style:none;margin:0;padding:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:140px 0;position:relative}
+:focus-visible{outline:2px solid #000000;outline-offset:3px;border-radius:6px}
+.grad{background:linear-gradient(180deg,#0a0a0a 45%,#5c5c5c 130%);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(2.1rem,4.6vw,3.6rem);max-width:19ch}
+
+/* Buttons */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;height:50px;padding:0 26px;border-radius:999px;font:500 15px/1 var(--font);color:#ffffff;background:#000000;border:1px solid #000000;transition:transform .25s,box-shadow .25s,background .25s,border-color .25s;cursor:pointer;white-space:nowrap;letter-spacing:-0.01em}
+.btn:hover{transform:translateY(-1px);box-shadow:0 0 0 6px rgba(0,0,0,.08)}
+.btn.ghost{background:rgba(0,0,0,.02);color:#000000;border-color:#d1d1d1}
+.btn.ghost:hover{border-color:#888888;box-shadow:none;background:rgba(0,0,0,.05)}
+.btn.sm{height:38px;padding:0 18px;font-size:14px}
+.btn.block{width:100%}
+
+/* Nav */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.72);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid rgba(0,0,0,.07)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;color:#000000;font-weight:600;font-size:16px;letter-spacing:-0.02em}
+.mark{width:22px;height:22px;border-radius:6px;border:1px solid #000000;position:relative}
+.mark::after{content:"";position:absolute;left:5px;bottom:5px;width:10px;height:10px;border-left:1.5px solid #000000;border-bottom:1.5px solid #000000;border-bottom-left-radius:6px}
+.links{display:flex;gap:6px;font-size:14.5px}
+.links a{padding:8px 14px;border-radius:999px;transition:color .2s,background .2s}
+.links a:hover{color:#000000;background:rgba(0,0,0,.06)}
+.burger{display:none;width:38px;height:38px;border:1px solid var(--line);border-radius:10px;background:none;cursor:pointer;position:relative}
+.burger span,.burger span::before,.burger span::after{position:absolute;left:11px;width:14px;height:1.5px;background:#000000;content:"";transition:transform .2s}
+.burger span{top:18px}.burger span::before{left:0;top:-5px}.burger span::after{left:0;top:5px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(5px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-5px) rotate(-45deg)}
+.nav-right{display:flex;gap:10px;align-items:center}
+
+/* Hero */
+.hero{padding:190px 0 0;text-align:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:720px;background:radial-gradient(60% 55% at 50% 0%,rgba(0,0,0,.16),rgba(0,0,0,.04) 45%,transparent 70%);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0 0 auto 0;height:620px;background-image:linear-gradient(#e9e9e9 1px,transparent 1px),linear-gradient(90deg,#e9e9e9 1px,transparent 1px);background-size:72px 72px;-webkit-mask-image:radial-gradient(60% 70% at 50% 0%,#ffffff,transparent 75%);mask-image:radial-gradient(60% 70% at 50% 0%,#ffffff,transparent 75%);pointer-events:none;opacity:.7}
+.hero .wrap{position:relative;z-index:1}
+.tag{display:inline-flex;align-items:center;gap:10px;border:1px solid #d5d5d5;background:rgba(0,0,0,.03);border-radius:999px;padding:8px 16px;font-size:12px;font-weight:500;letter-spacing:.1em;color:#444444;margin-bottom:34px}
+.tag i{width:6px;height:6px;border-radius:50%;background:#000000;box-shadow:0 0 0 4px rgba(0,0,0,.12)}
+h1{font-size:clamp(2.7rem,7.2vw,5.9rem);letter-spacing:-0.05em;line-height:.98;max-width:14ch;margin:0 auto}
+.lead{font-size:clamp(1.05rem,1.8vw,1.28rem);max-width:58ch;margin:30px auto 0;line-height:1.6}
+.actions{margin-top:42px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero small{display:block;margin-top:22px;font-size:14px;color:#888888}
+
+/* Product mock */
+.stage{margin:90px auto 0;max-width:1040px;position:relative;-webkit-mask-image:linear-gradient(#ffffff 70%,transparent);mask-image:linear-gradient(#ffffff 70%,transparent)}
+.win{border:1px solid #d9d9d9;border-bottom:0;border-radius:22px 22px 0 0;background:linear-gradient(180deg,#f1f1f1,#fafafa);box-shadow:0 -1px 0 rgba(0,0,0,.12) inset,0 60px 120px rgba(0,0,0,.04);text-align:left;overflow:hidden}
+.bar{display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid #e3e3e3}
+.bar i{width:10px;height:10px;border-radius:50%;background:#d5d5d5}
+.bar span{margin-left:14px;font-size:12.5px;color:var(--dim)}
+.body{display:grid;grid-template-columns:230px 1fr;min-height:340px}
+.side{border-right:1px solid #e3e3e3;padding:20px 14px;display:grid;gap:4px;align-content:start}
+.side b{display:block;font-size:11px;color:var(--dim);font-weight:500;letter-spacing:.08em;padding:0 10px 10px}
+.side div{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:9px;font-size:14px;color:#757575}
+.side div::before{content:"";width:7px;height:7px;border-radius:50%;border:1.5px solid #aaaaaa}
+.side div.on{background:#ebebeb;color:#000000;border:1px solid #dcdcdc}
+.side div.on::before{background:#000000;border-color:#000000}
+.main{padding:24px 26px;display:grid;gap:10px;align-content:start}
+.main h4{font-size:15px;letter-spacing:-0.01em;font-weight:500;margin-bottom:10px}
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:15px 16px;border:1px solid #e2e2e2;background:#f5f5f5;border-radius:12px;font-size:14px}
+.row.hl{border-color:#c5c5c5;background:#efefef}
+.av{width:30px;height:30px;border-radius:50%;background:#e7e7e7;border:1px solid #d5d5d5}
+.row strong{display:block;color:#000000;font-weight:500;font-size:14px}
+.row span.s{font-size:13px;color:var(--dim)}
+.pill{font-size:12px;padding:5px 11px;border-radius:999px;border:1px solid #d3d3d3;color:#555555;white-space:nowrap}
+.pill.w{background:#000000;color:#ffffff;border-color:#000000;font-weight:500}
+
+/* Bento */
+.head{margin-bottom:72px;display:grid;gap:22px}
+.head p{max-width:50ch}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{position:relative;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:34px;overflow:hidden;transition:border-color .3s}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(0,0,0,.07),transparent 60%);opacity:0;transition:opacity .35s;pointer-events:none}
+.card:hover{border-color:#c7c7c7}.card:hover::before{opacity:1}
+.card > *{position:relative}
+.c4{grid-column:span 4}.c2{grid-column:span 2}.c3{grid-column:span 3}
+.card h3{font-size:1.25rem;letter-spacing:-0.02em;line-height:1.25;margin-bottom:14px}
+.card p{font-size:15.5px}
+.viz{margin-top:30px;min-height:120px}
+/* viz: inbox */
+.inbox{display:grid;gap:8px}
+.inbox div{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border:1px solid #e3e3e3;border-radius:10px;font-size:13.5px;background:#fafafa;color:#999999}
+.inbox div.on{background:#eeeeee;border-color:#c5c5c5;color:#000000}
+.inbox div.on em{background:#000000;color:#ffffff}
+.inbox em{font-style:normal;font-size:11.5px;padding:3px 9px;border-radius:999px;border:1px solid #d3d3d3}
+/* viz: rings */
+.rings{height:130px;display:grid;place-items:center}
+.rings i{position:absolute;border:1px solid #d5d5d5;border-radius:50%}
+.rings i:nth-child(1){width:130px;height:130px}.rings i:nth-child(2){width:88px;height:88px;border-color:#c5c5c5}.rings i:nth-child(3){width:46px;height:46px;border-color:#888888}
+.rings i:nth-child(4){width:8px;height:8px;background:#000000;border:0}
+/* viz: bars */
+.bars{display:grid;gap:10px}
+.bars div{display:grid;grid-template-columns:70px 1fr;gap:12px;align-items:center;font-size:12.5px;color:var(--dim)}
+.bars div::after{content:"";height:6px;border-radius:99px;background:linear-gradient(90deg,#000000 var(--w),#e5e5e5 var(--w))}
+.bars div{grid-template-columns:70px 1fr}
+.bars span{grid-column:1}.bars div::after{grid-column:2}
+.flow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.flow span{font-size:12.5px;padding:7px 13px;border:1px solid #d5d5d5;border-radius:999px;color:#555555}
+.flow span.w{background:#000000;color:#ffffff;border-color:#000000;font-weight:500}
+.flow b{width:18px;height:1px;background:#bbbbbb}
+
+/* Process */
+.process{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}
+.sticky{position:sticky;top:120px;display:grid;gap:22px}
+.sticky p{max-width:42ch}
+.steps{display:grid;gap:16px;position:relative}
+.step{display:grid;grid-template-columns:56px 1fr;gap:24px;border:1px solid var(--line);background:var(--panel);border-radius:var(--r);padding:34px;position:relative;overflow:hidden}
+.step .num{width:44px;height:44px;border-radius:12px;border:1px solid #d1d1d1;background:#f0f0f0;color:#000000;display:grid;place-items:center;font-size:14px;font-weight:500}
+.step h3{font-size:1.45rem;letter-spacing:-0.025em;line-height:1.2;margin-bottom:10px}
+.step .sub{color:#444444;font-size:16px;margin-bottom:24px}
+.step li{padding:16px 0;border-top:1px solid #e5e5e5;font-size:15.5px}
+.step li b{display:block;color:#000000;font-weight:500;margin-bottom:3px;font-size:15.5px}
+
+/* About */
+.about{display:grid;grid-template-columns:1fr 1.15fr;gap:90px;align-items:start}
+.person{display:flex;align-items:center;gap:14px;margin-top:38px}
+.person .av{width:46px;height:46px;display:grid;place-items:center;color:#000000;font-size:14px;font-weight:500}
+.person strong{display:block;color:#000000;font-weight:500;font-size:15px;line-height:1.3}
+.person span{font-size:14px}
+.about .txt{display:grid;gap:24px;max-width:60ch}
+.about .txt p:first-child{color:#000000;font-size:1.35rem;letter-spacing:-0.02em;line-height:1.4}
+.about .txt p:nth-child(3){color:#222222}
+
+/* Pricing */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+.plan{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:24px;background:var(--panel);padding:38px 34px}
+.plan.hot{background:linear-gradient(#f3f3f3,#f8f8f8) padding-box,linear-gradient(180deg,#757575,#dddddd 45%,#dddddd) border-box;border:1px solid transparent;box-shadow:0 40px 100px rgba(0,0,0,.05)}
+.plan h3{font-size:1.1rem;letter-spacing:-0.01em;font-weight:500}
+.price{color:#000000;font-size:3.1rem;font-weight:600;letter-spacing:-0.05em;line-height:1;margin:22px 0 16px}
+.price span{font-size:1rem;color:var(--muted);font-weight:400;letter-spacing:0}
+.plan > p{font-size:15.5px;min-height:3.4em}
+.plan ul{margin:30px 0 34px;flex:1;border-top:1px solid #e3e3e3}
+.plan li{padding:13px 0 13px 30px;position:relative;font-size:15px;color:#424242}
+.plan li::before{content:"";position:absolute;left:5px;top:19px;width:5px;height:9px;border:solid #000000;border-width:0 1.5px 1.5px 0;transform:rotate(45deg) scale(.85)}
+
+/* CTA */
+.cta .box{position:relative;border:1px solid #d9d9d9;border-radius:32px;padding:96px 40px 48px;text-align:center;overflow:hidden;background:#fafafa}
+.cta .box::before{content:"";position:absolute;inset:0;background:radial-gradient(55% 60% at 50% 0%,rgba(0,0,0,.13),transparent 70%);pointer-events:none}
+.cta .box > *{position:relative}
+.cta h2{margin:0 auto}
+.cta .sub{max-width:52ch;margin:26px auto 0}
+.calendar{margin:60px auto 0;max-width:860px;min-height:420px;border:1px dashed #d3d3d3;border-radius:20px;display:grid;place-items:center;color:#aaaaaa;font-size:15px;background:#ffffff}
+
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:14px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+.foot nav{display:flex;gap:26px}.foot a:hover{color:#000000}
+
+/* Entrance: hero only */
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero .tag,.hero h1,.hero .lead,.hero .actions,.hero small{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.hero h1{animation-delay:.08s}.hero .lead{animation-delay:.18s}.hero .actions{animation-delay:.28s}.hero small{animation-delay:.36s}
+.stage{animation:up 1.2s .45s cubic-bezier(.2,.7,.2,1) both}
+
+
+/* ===== v3 upgrades ===== */
+html.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+html.js .rv.in{opacity:1;transform:none}
+section + section::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(1180px,calc(100% - 48px));height:1px;background:linear-gradient(90deg,transparent,#d3d3d3 30%,#d3d3d3 70%,transparent)}
+.hero + section::before{display:none}
+.head{max-width:900px}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:500;letter-spacing:.1em;color:#777777;border:1px solid #dcdcdc;border-radius:999px;padding:6px 12px;width:max-content}
+/* cards */
+.card,.plan{background:linear-gradient(180deg,#f3f3f3,#fafafa);box-shadow:inset 0 1px 0 rgba(0,0,0,.07)}
+.card::after{content:"";position:absolute;left:12%;right:12%;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,0,0,.35),transparent);opacity:.5}
+.card.c4{background:radial-gradient(60% 80% at 100% 100%,rgba(0,0,0,.06),transparent 70%),linear-gradient(180deg,#f3f3f3,#fafafa)}
+.plan{position:relative;overflow:hidden;transition:border-color .3s,transform .4s}
+.plan::before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(0,0,0,.07),transparent 60%);opacity:0;transition:opacity .35s;pointer-events:none}
+.plan:hover{transform:translateY(-4px)}.plan:hover::before{opacity:1}.plan:not(.hot):hover{border-color:#c7c7c7}
+.plan > *{position:relative}
+.plan.hot::after{content:"";position:absolute;left:10%;right:10%;top:0;height:1px;background:linear-gradient(90deg,transparent,#000000,transparent)}
+/* tabs */
+.tabs{position:relative;margin-top:8px}
+.tabs > input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.tabnav{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:8px;border:1px solid var(--line);border-radius:22px;background:#fafafa;margin-bottom:16px}
+.tabnav label{display:flex;flex-direction:column;gap:12px;padding:20px 22px;border-radius:15px;cursor:pointer;color:#888888;font-size:15px;font-weight:500;letter-spacing:-.01em;line-height:1.3;border:1px solid transparent;transition:color .25s,background .25s,border-color .25s}
+.tabnav label span{font-size:12px;color:#aaaaaa;letter-spacing:.1em;transition:color .25s}
+.tabnav label:hover{color:#333333}
+#s1:checked~.tabnav label[for=s1],#s2:checked~.tabnav label[for=s2],#s3:checked~.tabnav label[for=s3],#s4:checked~.tabnav label[for=s4]{background:#eeeeee;border-color:#d5d5d5;color:#000000;box-shadow:inset 0 1px 0 rgba(0,0,0,.1)}
+#s1:checked~.tabnav label[for=s1] span,#s2:checked~.tabnav label[for=s2] span,#s3:checked~.tabnav label[for=s3] span,#s4:checked~.tabnav label[for=s4] span{color:#000000}
+#s1:focus-visible~.tabnav label[for=s1],#s2:focus-visible~.tabnav label[for=s2],#s3:focus-visible~.tabnav label[for=s3],#s4:focus-visible~.tabnav label[for=s4]{outline:2px solid #000000;outline-offset:2px}
+.panel{display:none;grid-template-columns:1.05fr .95fr;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:linear-gradient(180deg,#f4f4f4,#fafafa);box-shadow:inset 0 1px 0 rgba(0,0,0,.07)}
+#s1:checked~.panels .p1,#s2:checked~.panels .p2,#s3:checked~.panels .p3,#s4:checked~.panels .p4{display:grid;animation:up .55s cubic-bezier(.2,.7,.2,1) both}
+.pl{padding:52px 48px}
+.pl h3{font-size:clamp(1.6rem,2.6vw,2.1rem);letter-spacing:-.035em;line-height:1.12;margin-bottom:14px}
+.pl .sub{color:#2f2f2f;font-size:17px;margin-bottom:30px}
+.pl li{padding:17px 0;border-top:1px solid #e5e5e5;font-size:15.5px}
+.pl li b{display:block;color:#000000;font-weight:500;margin-bottom:4px}
+.pr{padding:48px;border-left:1px solid #e3e3e3;background:radial-gradient(70% 55% at 50% 0%,rgba(0,0,0,.08),transparent 70%),#fcfcfc;display:grid;align-content:center;gap:10px}
+.vr{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border:1px solid #e2e2e2;background:#f5f5f5;border-radius:12px;font-size:13.5px;color:#777777}
+.vr b{color:#000000;font-weight:500}
+.vr.on{border-color:#c3c3c3;background:#ededed}
+.vr .pill{font-size:11.5px;padding:4px 10px;border-radius:999px;border:1px solid #d3d3d3;color:#555555}
+.vr .pill.w{background:#000000;color:#ffffff;border-color:#000000;font-weight:500}
+.sk{height:7px;border-radius:99px;background:#e4e4e4;margin:7px 0}.sk.w{background:#c5c5c5}
+.mail{padding:20px;border:1px solid #e2e2e2;border-radius:14px;background:#f5f5f5;margin-top:4px}
+.meter{height:6px;border-radius:99px;background:linear-gradient(90deg,#000000 var(--w),#e5e5e5 var(--w));margin-top:12px}
+.vr.col{display:block}
+.cal{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:4px}
+.cal em{font-style:normal;font-size:11.5px;color:#999999;text-align:center;letter-spacing:.06em}
+.cal i{height:36px;border-radius:9px;border:1px solid #e2e2e2;background:#f5f5f5}
+.cal i.f{background:#eaeaea;border-color:#d5d5d5}
+.cal i.hit{background:#000000;border-color:#000000;box-shadow:0 0 0 5px rgba(0,0,0,.1)}
+/* about */
+.person{padding:20px;border:1px solid #dcdcdc;border-radius:18px;background:linear-gradient(180deg,#f3f3f3,#f9f9f9);width:max-content;max-width:100%;box-shadow:inset 0 1px 0 rgba(0,0,0,.07)}
+.about .txt{position:relative;padding-left:36px}
+.about .txt::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,#000000,#dddddd 40%,transparent)}
+.about .txt p:nth-child(3){font-size:1.3rem;letter-spacing:-.02em;line-height:1.4;color:#000000}
+/* cta */
+.cta .box{background:radial-gradient(50% 55% at 50% 0%,rgba(0,0,0,.1),transparent 70%),#fbfbfb;box-shadow:inset 0 1px 0 rgba(0,0,0,.1),0 60px 140px rgba(0,0,0,.035)}
+.cta .box::after{content:"";position:absolute;inset:0;background-image:linear-gradient(#ebebeb 1px,transparent 1px),linear-gradient(90deg,#ebebeb 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(50% 60% at 50% 0%,#ffffff,transparent 80%);mask-image:radial-gradient(50% 60% at 50% 0%,#ffffff,transparent 80%);pointer-events:none;opacity:.6}
+
+@media (max-width:1000px){
+  section{padding:100px 0}
+  .process,.about{grid-template-columns:1fr;gap:48px}
+  .sticky{position:static}
+  .plans{grid-template-columns:1fr}.plan > p{min-height:0}
+  .c4,.c2,.c3{grid-column:span 6}
+  .bento{grid-template-columns:repeat(6,1fr)}
+  .c2{grid-column:span 3}.c4{grid-column:span 6}
+  .c2:last-child{grid-column:span 6}
+}
+@media (max-width:820px){
+  .burger{display:block}
+  .links{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:#ffffff;border-bottom:1px solid var(--line);padding:8px 24px 16px}
+  .links a{padding:15px 0;border-radius:0;border-bottom:1px solid #e9e9e9;color:#000000}.links a:last-child{border:0}
+  .menu-open .links{display:flex}
+  .body{grid-template-columns:1fr}.side{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  section{padding:80px 0}.hero{padding:140px 0 0}
+  .c2,.c2:last-child{grid-column:span 6}
+  .card,.step,.plan{padding:26px 22px}
+  .step{grid-template-columns:1fr;gap:16px}
+  .nav-right .btn.sm{display:none}
+  .actions .btn{width:100%}
+  .row{grid-template-columns:auto 1fr}.row .pill{display:none}
+  .stage{margin-top:60px}
+  .cta .box{padding:64px 20px 28px;border-radius:24px}
+  .calendar{min-height:360px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+@media (max-width:1000px){
+  .tabnav{display:flex;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .tabnav::-webkit-scrollbar{display:none}
+  .tabnav label{flex:0 0 auto;min-width:230px}
+  .panel{grid-template-columns:1fr}
+  .pr{border-left:0;border-top:1px solid #e3e3e3}
+}
+@media (max-width:640px){
+  .pl,.pr{padding:30px 22px}
+  .tabnav label{min-width:200px;padding:16px 18px}
+  .about .txt{padding-left:22px}
+}
+
+/* ===== LIGHT-NATIVE LAYER ===== */
+.em{-webkit-text-fill-color:initial;color:initial;background:none;display:inline-block}
+.m-r small{margin-top:0!important}.m-r .t{white-space:nowrap}.cu-g .ev span{display:block}
+
+:root{--sh:0 0 0 1px rgba(0,0,0,.06),0 2px 4px rgba(0,0,0,.04),0 30px 70px -18px rgba(0,0,0,.22)}
+.hero::before{background:radial-gradient(60% 55% at 50% 0%,rgba(0,0,0,.045),transparent 70%)}
+.hero.hpad{padding-bottom:130px;overflow:visible}
+.card,.plan,.panel,.tl,.cmp,.after,.terms,.person{box-shadow:0 1px 2px rgba(16,24,40,.04),0 14px 34px -10px rgba(16,24,40,.08)}
+.card::after{background:linear-gradient(90deg,transparent,rgba(0,0,0,.1),transparent)}
+.plan.hot{box-shadow:0 34px 80px -24px rgba(0,0,0,.25)}
+.cta .box::before{background:radial-gradient(55% 60% at 50% 0%,rgba(0,0,0,.05),transparent 70%)}
+.cta .box{box-shadow:0 40px 100px -40px rgba(0,0,0,.18)}
+.btn{box-shadow:0 1px 2px rgba(0,0,0,.2),0 8px 20px -8px rgba(0,0,0,.35)}
+.btn.ghost{box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.cap{margin-top:26px;text-align:center;font-size:12.5px;color:#9a9a9a}
+.stage{-webkit-mask-image:none;mask-image:none;margin-top:80px}
+/* window */
+.ui{background:#fff;border-radius:14px;box-shadow:var(--sh);overflow:hidden;text-align:left;color:#0a0a0a;font-size:13px;line-height:1.4}
+.ui-bar{display:flex;align-items:center;gap:7px;padding:12px 14px;background:linear-gradient(#fdfdfd,#f3f3f3);border-bottom:1px solid #e8e8e8}
+.ui-bar i{width:11px;height:11px;border-radius:50%}
+.ui-bar i:nth-child(1){background:#ff5f57}.ui-bar i:nth-child(2){background:#febc2e}.ui-bar i:nth-child(3){background:#28c840}
+.ui-bar span{margin-left:12px;font-size:12px;color:#8a8a8a;font-weight:500}
+/* email client */
+.mc{display:grid;grid-template-columns:200px 300px 1fr;min-height:440px}
+.m-side{padding:16px 12px;border-right:1px solid #eee;background:#fafafa;display:grid;align-content:start;gap:2px}
+.m-comp{display:flex;align-items:center;justify-content:center;height:34px;border-radius:9px;background:#0a0a0a;color:#fff;font-weight:500;font-size:13px;margin-bottom:12px}
+.m-i{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;color:#555;font-size:13px}
+.m-i svg,.ic{width:15px;height:15px;stroke:#777;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.m-i b{margin-left:auto;font-weight:500;font-size:11.5px;color:#999}
+.m-i.on{background:#ececec;color:#0a0a0a;font-weight:500}.m-i.on svg{stroke:#0a0a0a}
+.m-lb{font-size:11px;letter-spacing:.08em;color:#aaa;padding:16px 10px 6px;font-weight:500}
+.m-list{border-right:1px solid #eee}
+.m-sr{padding:12px 14px;border-bottom:1px solid #eee;display:flex;align-items:center;gap:8px;color:#aaa;font-size:12.5px}
+.m-r{display:grid;grid-template-columns:32px 1fr auto;gap:10px;padding:13px 14px;border-bottom:1px solid #f0f0f0;position:relative}
+.m-r.on{background:#f6f6f6}.m-r.on::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:#0a0a0a}
+.m-av{width:32px;height:32px;border-radius:50%;background:linear-gradient(#f4f4f4,#e6e6e6);box-shadow:inset 0 0 0 1px rgba(0,0,0,.05);display:grid;place-items:center;font-size:11.5px;font-weight:600;color:#444;flex:none}
+.m-r strong{display:block;font-weight:600;font-size:13px}
+.m-r .t{font-size:11.5px;color:#aaa}
+.m-r p{font-size:12.5px;margin:1px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:178px}
+.m-r small{display:block;font-size:12px;color:#8a8a8a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:178px}
+.etag{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;padding:2px 8px;border-radius:99px;font-weight:500;margin-top:6px;background:#0a0a0a;color:#fff}
+.etag.o{background:#f0f0f0;color:#555}
+.etag.b{background:#fff;color:#0a0a0a;box-shadow:inset 0 0 0 1px #d8d8d8}.etag.b::before{content:"";width:6px;height:6px;border-radius:50%;background:#22c55e}
+.m-read{padding:24px 28px;display:grid;align-content:start;gap:16px}
+.m-read h5{margin:0;font-size:16px;font-weight:600;letter-spacing:-.02em}
+.m-meta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:#777}
+.m-meta strong{color:#0a0a0a;font-weight:600}
+.m-msg{border:1px solid #ececec;border-radius:12px;padding:14px 16px;font-size:13px;color:#222;line-height:1.55}
+.m-msg b{display:block;font-weight:600;font-size:12px;margin-bottom:4px;color:#777}
+.m-msg.me{background:#fafafa}
+.m-book{display:flex;align-items:center;gap:12px;border:1px solid #e3e3e3;border-radius:12px;padding:12px 14px;background:#fff;box-shadow:0 8px 20px -10px rgba(0,0,0,.2)}
+.m-cal{width:38px;height:42px;border-radius:9px;border:1px solid #e3e3e3;overflow:hidden;text-align:center;flex:none}
+.m-cal i{display:block;background:#0a0a0a;color:#fff;font-style:normal;font-size:8.5px;letter-spacing:.08em;padding:3px 0}
+.m-cal b{display:block;font-size:15px;line-height:1.6;font-weight:600}
+.m-book strong{display:block;font-weight:600;font-size:13px}.m-book span{font-size:12px;color:#777}
+.m-book .etag{margin:0 0 0 auto}
+/* calendar */
+.cu-w{overflow-x:auto}
+.cu-h{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid #eee}
+.cu-h strong{font-size:14px;font-weight:600}
+.cu-h .lg{margin-left:auto;display:flex;gap:14px;font-size:12px;color:#777}
+.cu-h .lg i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;background:#0a0a0a}.cu-h .lg i.g{background:#d4d4d4}
+.cu-g{display:grid;grid-template-columns:52px repeat(5,1fr);grid-template-rows:40px repeat(6,62px);min-width:640px}
+.cu-g > div{border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;font-size:11.5px;color:#aaa;padding:6px 8px}
+.cu-g .d{color:#666;font-weight:500}.cu-g .d.now{color:#0a0a0a;font-weight:600}
+.cu-g .ev{margin:4px 5px;border-radius:9px;padding:8px 10px;font-size:11.5px;line-height:1.3;border:0;z-index:1}
+.ev b{display:block;font-weight:600;font-size:12px}
+.ev.o{background:#0a0a0a;color:#fff;box-shadow:0 8px 18px -8px rgba(0,0,0,.5)}.ev.o span{color:#bbb}
+.ev.i{background:#f1f1f1;color:#0a0a0a;box-shadow:inset 3px 0 0 #0a0a0a}.ev.i span{color:#777}
+/* device */
+.dv{width:290px;border-radius:50px;padding:11px;background:linear-gradient(150deg,#3b3b3b,#0c0c0c 40%,#2a2a2a);box-shadow:0 0 0 1px #555 inset,0 50px 100px -25px rgba(0,0,0,.5),0 18px 40px -12px rgba(0,0,0,.3);position:relative}
+.dv::before{content:"";position:absolute;top:20px;left:50%;transform:translateX(-50%);width:84px;height:24px;border-radius:99px;background:#000;z-index:2}
+.dv-s{background:#fff;border-radius:40px;overflow:hidden;height:540px;display:flex;flex-direction:column;text-align:left;color:#0a0a0a}
+.dv-st{height:52px;display:flex;justify-content:space-between;align-items:flex-end;padding:0 28px 6px;font-size:12.5px;font-weight:600;flex:none}
+.dv-st i{display:inline-block;width:20px;height:10px;border-radius:3px;border:1.5px solid #0a0a0a;position:relative;margin-bottom:3px}
+.dv-st i::after{content:"";position:absolute;inset:1.5px;background:#0a0a0a;border-radius:1px;right:5px}
+.dv-h{display:flex;align-items:center;gap:10px;padding:8px 16px 12px;border-bottom:1px solid #eee;flex:none}
+.dv-h .m-av{width:34px;height:34px}.dv-h strong{display:block;font-size:13.5px;font-weight:600;line-height:1.2}.dv-h span{font-size:11.5px;color:#8a8a8a}
+.dv-m{flex:1;padding:14px;display:flex;flex-direction:column;gap:8px;overflow:hidden}
+.pb{max-width:84%;padding:9px 13px;border-radius:18px 18px 18px 5px;background:#f0f0f0;font-size:13px;line-height:1.4}
+.pb.me{align-self:flex-end;background:#0a0a0a;color:#fff;border-radius:18px 18px 5px 18px}
+.pq{display:flex;flex-wrap:wrap;gap:6px}.pq span{font-size:12px;padding:7px 12px;border-radius:99px;box-shadow:inset 0 0 0 1px #d6d6d6;font-weight:500}
+.pt{align-self:center;font-size:10.5px;color:#aaa}
+.dv-i{margin:8px 14px 20px;height:38px;border-radius:99px;box-shadow:inset 0 0 0 1px #e0e0e0;display:flex;align-items:center;padding:0 14px;color:#aaa;font-size:13px;flex:none}
+/* scenes */
+.scene{position:relative;max-width:1040px;margin:80px auto 0;animation:up 1.2s .45s cubic-bezier(.2,.7,.2,1) both}
+.scene.home .ui{margin-right:190px}
+.scene.home .dv{position:absolute;right:0;bottom:-90px}
+.scene.home .dv-s{height:440px}
+.scene.msg .dv{position:relative;z-index:2}.scene.msg{display:flex;justify-content:center;align-items:flex-start;gap:0}
+.po{width:400px;margin-top:70px;margin-right:-50px;position:relative;z-index:1}
+.po-h{display:flex;align-items:center;gap:10px;padding:14px 16px}
+.po-h strong{display:block;font-size:13.5px;font-weight:600;line-height:1.2}.po-h span{font-size:11.5px;color:#8a8a8a}
+.po-img{margin:0 16px;border-radius:12px;background:linear-gradient(135deg,#f6f6f6,#e9e9e9);aspect-ratio:16/10;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;position:relative;overflow:hidden}
+.po-img::before{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;box-shadow:0 0 0 1px rgba(0,0,0,.06),0 0 0 30px rgba(0,0,0,.025),0 0 0 60px rgba(0,0,0,.02)}
+.po-img b{font-size:22px;letter-spacing:-.03em;line-height:1.1;font-weight:600;position:relative}
+.po-img span{font-size:12.5px;color:#666;margin-top:6px;position:relative}
+.po-a{display:flex;gap:14px;padding:14px 16px 4px}
+.po-c{padding:4px 16px 18px;display:grid;gap:10px;font-size:12.5px}
+.po-c div{display:flex;gap:9px;align-items:flex-start}.po-c .m-av{width:24px;height:24px;font-size:9.5px}
+.po-c b{font-weight:600}.po-c em{font-style:normal;display:block;color:#8a8a8a;font-size:11.5px;margin-top:2px}
+/* demo phone becomes a device */
+.phone{border:11px solid #0e0e0e;border-radius:52px;box-shadow:0 0 0 1.5px #3a3a3a,0 50px 100px -25px rgba(0,0,0,.45);background:#fff;position:relative;max-width:400px}
+.phone::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:90px;height:26px;border-radius:99px;background:#0e0e0e;z-index:3}
+.phone .ph{padding-top:46px}
+@media (max-width:1000px){
+  .mc{grid-template-columns:1fr 1fr}.m-side{display:none}
+  .scene.home .ui{margin-right:0}.scene.home .dv{display:none}.hero.hpad{padding-bottom:60px}
+  .scene.msg{flex-direction:column;align-items:center;gap:28px}.po{margin:0;width:100%;max-width:420px}
+}
+@media (max-width:640px){.mc{grid-template-columns:1fr}.m-list{display:none}.m-read{padding:20px}.dv{width:272px}}
+
+/* ===== APPLE LAYER ===== */
+:root{--font:"SF Pro Display","SF Pro Text",-apple-system,BlinkMacSystemFont,"Inter","Helvetica Neue",Arial,sans-serif;--blue:#0071e3;--ink:#1d1d1f;--sec:#6e6e73;--gray:#f5f5f7}
+body{background:#fff;color:var(--sec);font-size:16px;line-height:1.5;letter-spacing:-.011em}
+h1,h2,h3,h4{color:var(--ink);letter-spacing:-.025em}
+.grad{background:none;-webkit-text-fill-color:var(--ink);color:var(--ink)}
+section{padding:104px 0}
+.hero::before,.hero::after{display:none}
+section + section::before{display:none}
+#how,#pricing{background:var(--gray)}
+/* header */
+header{background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08);box-shadow:none}
+.nav{height:52px}
+.logo{font-size:15px;color:var(--ink)}
+.links{gap:2px;font-size:12px}
+.links a{padding:6px 12px;color:rgba(0,0,0,.8);border-radius:999px}
+.links a:hover{background:none;color:#000}
+/* buttons */
+.btn{height:44px;padding:0 22px;background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:none;font-size:15px;font-weight:500;letter-spacing:-.01em}
+.btn:hover{background:#0077ed;border-color:#0077ed;box-shadow:none;transform:none}
+.btn.ghost{background:transparent;color:var(--blue);border-color:var(--blue);box-shadow:none}
+.btn.ghost:hover{background:var(--blue);color:#fff}
+.btn.sm{height:30px;padding:0 14px;font-size:12px}
+/* type scale (smaller) */
+.hero{padding:132px 0 0}
+h1{font-size:clamp(2.1rem,4.8vw,3.5rem);line-height:1.08;letter-spacing:-.03em;font-weight:600;max-width:18ch}
+h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.12;letter-spacing:-.026em;font-weight:600;max-width:24ch}
+.lead{font-size:clamp(1rem,1.4vw,1.15rem);line-height:1.5;color:#424245;max-width:54ch;margin-top:20px}
+.actions{margin-top:30px}
+.hero small{color:var(--sec);font-size:13px;margin-top:16px}
+.tag{border:0;background:none;padding:0;color:#86868b;font-size:12px;letter-spacing:.08em;margin-bottom:16px}
+.tag i{display:none}
+.kicker{border:0;padding:0;color:#86868b;font-size:12px;letter-spacing:.08em}
+.head{text-align:center;justify-items:center;margin:0 auto 56px;gap:14px}
+.head h2,.head p{margin-left:auto;margin-right:auto}
+.head p{font-size:17px;color:var(--sec);max-width:56ch}
+.stage{margin-top:60px}
+.cap{color:#86868b}
+/* cards */
+.card{background:var(--gray);border:0;border-radius:28px;box-shadow:none;padding:34px}
+.card::before,.card::after{display:none}
+.card.c4{background:var(--gray)}
+.card h3{font-size:1.15rem;line-height:1.25;margin-bottom:10px}
+.card p{font-size:15px;color:var(--sec);line-height:1.5}
+.card:hover{border-color:transparent}
+.viz{margin-top:24px}
+.inbox div{background:#fff;border:0;color:var(--sec);box-shadow:0 0 0 1px rgba(0,0,0,.04)}
+.inbox div.on{color:var(--ink);box-shadow:0 0 0 1.5px var(--blue)}
+.inbox em{border:0;background:#e8e8ed;color:var(--sec)}
+.inbox div.on em{background:#34c759;color:#fff}
+.rings i{border-color:#d2d2d7}
+.rings i:nth-child(2){border-color:rgba(0,122,255,.3)}.rings i:nth-child(3){border-color:rgba(0,122,255,.6)}.rings i:nth-child(4){background:#007aff}
+.bars div{color:var(--sec)}
+.bars div::after{background:linear-gradient(90deg,#007aff var(--w),#e5e5ea var(--w))}
+.bars div:nth-child(2)::after{background:linear-gradient(90deg,#5ac8fa var(--w),#e5e5ea var(--w))}
+.bars div:nth-child(3)::after{background:linear-gradient(90deg,#af52de var(--w),#e5e5ea var(--w))}
+.flow span{border:0;background:#fff;color:var(--ink);box-shadow:0 0 0 1px rgba(0,0,0,.06)}
+.flow span.w{background:var(--blue);color:#fff;box-shadow:none}
+.flow b{background:#c7c7cc}
+/* steps (segmented control) */
+.tabnav{background:#e8e8ed;border:0;border-radius:18px;padding:4px;gap:2px}
+.tabnav label{color:var(--sec);font-size:14px;border-radius:14px;padding:16px 18px}
+.tabnav label span{color:#8e8e93}
+#s1:checked~.tabnav label[for=s1],#s2:checked~.tabnav label[for=s2],#s3:checked~.tabnav label[for=s3],#s4:checked~.tabnav label[for=s4]{background:#fff;border-color:transparent;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12),0 0 0 .5px rgba(0,0,0,.04)}
+#s1:checked~.tabnav label[for=s1] span,#s2:checked~.tabnav label[for=s2] span,#s3:checked~.tabnav label[for=s3] span,#s4:checked~.tabnav label[for=s4] span{color:var(--blue)}
+.panel{background:#fff;border:0;border-radius:28px;box-shadow:none}
+.pl{padding:44px 40px}
+.pl h3{font-size:clamp(1.4rem,2.2vw,1.75rem);letter-spacing:-.028em}
+.pl .sub{font-size:16px;color:#424245;margin-bottom:24px}
+.pl li{font-size:14.5px;border-top-color:#e5e5ea;padding:15px 0}
+.pr{background:var(--gray);border-left:0;padding:40px}
+.vr{background:#fff;border:0;box-shadow:0 0 0 1px rgba(0,0,0,.05);color:var(--sec)}
+.vr b{color:var(--ink)}
+.vr.on{box-shadow:0 0 0 1.5px var(--blue)}
+.vr .pill{border:0;background:#ececf1;color:var(--sec)}
+.vr .pill.w{background:#34c759;color:#fff}
+.mail{background:#fff;border:0;box-shadow:0 0 0 1px rgba(0,0,0,.05)}
+.sk{background:#e5e5ea}.sk.w{background:#c7c7cc}
+.meter{background:linear-gradient(90deg,#34c759 var(--w),#e5e5ea var(--w))}
+.cal em{color:#8e8e93}
+.cal i{background:#fff;border:0;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.cal i.f{background:#e8f1ff;box-shadow:none}
+.cal i.hit{background:#007aff;box-shadow:0 0 0 5px rgba(0,122,255,.15)}
+/* about */
+.person{background:var(--gray);border:0;box-shadow:none}
+.about .txt::before{background:linear-gradient(180deg,#d2d2d7,transparent)}
+.about .txt p:first-child{font-size:1.15rem;color:var(--ink)}
+.about .txt p:nth-child(3){font-size:1.1rem;color:var(--ink)}
+.about .txt p{font-size:16px}
+/* pricing */
+.plan{background:#fff;border:0;border-radius:28px;box-shadow:none;padding:34px 30px}
+.plan::before,.plan::after{display:none}
+.plan:hover{transform:none}
+.plan.hot{background:#fff;border:0;box-shadow:0 0 0 2px var(--blue)}
+.plan h3{font-size:1.05rem}
+.price{font-size:2.6rem;color:var(--ink);letter-spacing:-.04em}
+.price span{color:var(--sec)}
+.plan > p{font-size:15px}
+.plan ul{border-top-color:#e5e5ea}
+.plan li{font-size:14.5px;color:#424245;border-bottom:0;padding:11px 0 11px 28px}
+.plan li::before{border-color:var(--blue)}
+/* cta + footer */
+.cta .box{background:var(--gray);border:0;border-radius:32px;box-shadow:none;padding:80px 40px 44px}
+.cta .box::before,.cta .box::after{display:none}
+.cta .sub{font-size:17px;color:var(--sec)}
+.calendar{background:#fff;border:1px dashed #d2d2d7;color:#86868b}
+footer{background:var(--gray);border-top:1px solid #d2d2d7;color:var(--sec);font-size:12px;padding:28px 0}
+.foot a:hover{color:var(--ink)}
+/* mail window (macOS Mail look) */
+.ui{border-radius:12px;box-shadow:0 0 0 .5px rgba(0,0,0,.18),0 24px 70px rgba(0,0,0,.22)}
+.ui-bar{background:linear-gradient(#f6f6f6,#ececec)}
+.m-side{background:#f2f2f5;border-right:1px solid #e3e3e8}
+.m-comp{background:#007aff;border-radius:8px}
+.m-i{color:#1d1d1f}
+.m-i svg{stroke:#007aff}
+.m-i b{color:#8e8e93}
+.m-i.on{background:rgba(0,0,0,.07)}
+.m-i.on svg{stroke:#007aff}
+.m-lb{color:#8e8e93}
+.m-list{border-right:1px solid #e3e3e8}
+.m-av{background:linear-gradient(#a9afba,#858c99);color:#fff;box-shadow:none}
+.m-r.on{background:#0a7aff}
+.m-r.on::before{display:none}
+.m-r.on strong,.m-r.on p{color:#fff}
+.m-r.on small,.m-r.on .t{color:rgba(255,255,255,.78)}
+.m-r.on .m-av{background:rgba(255,255,255,.28)}
+.etag{background:rgba(0,122,255,.12);color:#0a60d6}
+.etag.o{background:rgba(255,149,0,.16);color:#b25e00}
+.etag.p{background:rgba(175,82,222,.14);color:#8a3fb5}
+.etag.g{background:#ececf1;color:#6e6e73}
+.etag.b{background:rgba(52,199,89,.16);color:#1a8a3c;box-shadow:none}
+.etag.b::before{display:none}
+.m-r.on .etag{background:#fff;color:#0a60d6}
+.m-msg{border-color:#e5e5ea}
+.m-msg.me{background:#f5f5f7}
+.m-cal i{background:#ff3b30}
+.m-book{border-color:#e5e5ea;box-shadow:0 8px 24px -10px rgba(0,0,0,.18)}
+
+.hero{overflow:visible}
+#why{background:var(--gray)}
+#how{background:#fff}
+#why .card{background:#fff}
+#why .inbox div{background:var(--gray);box-shadow:none}
+#why .inbox div.on{background:#fff;box-shadow:0 0 0 1.5px var(--blue)}
+#why .flow span{background:var(--gray);box-shadow:none}
+#why .flow span.w{background:var(--blue)}
+#why .bars div::after{background-color:transparent}
+.panel{background:var(--gray)}
+.pr{background:transparent}
+.pl li{border-top-color:#dcdce0}
+
+.logo{font-size:16px;font-weight:600;letter-spacing:-.02em}
+/* ===== ABOUT: macOS window + iOS widgets ===== */
+#about{background:#fff}
+.abt-stage{
+  position:relative;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:28px;
+  padding:40px;border-radius:44px;isolation:isolate;
+  background:
+    radial-gradient(55% 70% at 8% 0%,#d9e8ff 0,transparent 62%),
+    radial-gradient(45% 60% at 100% 12%,#ffe4d4 0,transparent 60%),
+    radial-gradient(60% 70% at 92% 100%,#e6dcfa 0,transparent 62%),
+    radial-gradient(50% 60% at 0% 100%,#d6f1e6 0,transparent 60%),
+    #eef0f6;
+  box-shadow:inset 0 0 0 .5px rgba(0,0,0,.06)}
+/* photo */
+.abt-photo{position:relative;margin:0;min-height:560px;border-radius:32px;overflow:hidden;background:linear-gradient(160deg,#c9d3e6,#aab6cf);box-shadow:0 0 0 .5px rgba(0,0,0,.1),0 30px 60px -24px rgba(30,40,80,.4)}
+.abt-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 24%}
+.abt-photo figcaption{position:absolute;left:14px;right:14px;bottom:14px;display:flex;flex-direction:column;gap:1px;padding:14px 18px;border-radius:22px;background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(24px) saturate(190%);backdrop-filter:blur(24px) saturate(190%);box-shadow:0 0 0 .5px rgba(255,255,255,.7) inset,0 0 0 .5px rgba(0,0,0,.06)}
+.abt-photo strong{font-size:16px;font-weight:600;color:var(--ink);letter-spacing:-.015em}
+.abt-photo figcaption span{font-size:14px;color:#55555a}
+/* right column */
+.abt-main{display:flex;flex-direction:column;gap:16px;min-width:0}
+.abt-win{border-radius:24px;background:rgba(255,255,255,.74);-webkit-backdrop-filter:blur(32px) saturate(180%);backdrop-filter:blur(32px) saturate(180%);box-shadow:0 0 0 .5px rgba(0,0,0,.1),0 1px 0 rgba(255,255,255,.9) inset,0 40px 80px -28px rgba(30,40,80,.32);overflow:hidden}
+.abt-bar{position:relative;display:flex;align-items:center;height:52px;padding:0 20px;border-bottom:1px solid rgba(0,0,0,.06)}
+.abt-dots{display:flex;gap:8px}
+.abt-dots i{width:12px;height:12px;border-radius:50%;box-shadow:inset 0 0 0 .5px rgba(0,0,0,.16)}
+.abt-dots i:nth-child(1){background:#ff5f57}.abt-dots i:nth-child(2){background:#febc2e}.abt-dots i:nth-child(3){background:#28c840}
+.abt-title{position:absolute;left:0;right:0;text-align:center;font-size:13px;font-weight:600;color:#55555a;letter-spacing:-.005em;pointer-events:none}
+.abt-body{padding:36px 44px 44px}
+.abt-body h2{max-width:20ch;margin:0 0 26px;text-align:left;font-size:clamp(1.8rem,3.2vw,2.5rem);line-height:1.08}
+.abt-txt{display:grid;gap:16px;max-width:56ch}
+.abt-txt p{font-size:16.5px;line-height:1.55;color:var(--sec);margin:0}
+.abt-txt .hi{color:var(--ink);font-weight:600}
+.abt-txt .pull{position:relative;padding-left:20px;color:var(--ink);font-size:19px;font-weight:600;letter-spacing:-.02em;line-height:1.4}
+.abt-txt .pull::before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:3px;border-radius:2px;background:var(--blue)}
+/* widgets */
+.abt-widgets{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.wg{position:relative;display:flex;flex-direction:column;gap:18px;min-height:170px;padding:20px 22px 22px;border-radius:30px;box-shadow:0 0 0 .5px rgba(0,0,0,.08),0 24px 40px -22px rgba(30,40,80,.3)}
+.wg-before{background:rgba(255,255,255,.8);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%)}
+.wg-now{background:linear-gradient(160deg,#2b9bff,#0062d6);color:#fff}
+.wg-hd{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:600;letter-spacing:-.01em;color:#55555a}
+.wg-now .wg-hd{color:rgba(255,255,255,.92)}
+.wg-ic{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;flex:none;background:linear-gradient(#ff9f0a,#ff7a00)}
+.wg-now .wg-ic{background:rgba(255,255,255,.22)}
+.wg-ic svg{width:15px;height:15px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.wg-num{margin-top:auto;font-size:clamp(2.3rem,4vw,3.1rem);font-weight:600;line-height:1;letter-spacing:-.045em;color:var(--ink)}
+.wg-now .wg-num{color:#fff}
+.wg-cap{margin-top:-8px;font-size:14.5px;line-height:1.35;color:#55555a}
+.wg-now .wg-cap{color:rgba(255,255,255,.9)}
+@media (max-width:980px){
+  .abt-stage{grid-template-columns:1fr;padding:24px;border-radius:36px}
+  .abt-photo{min-height:0;aspect-ratio:4/5;max-height:560px}
+  .abt-body{padding:28px 28px 32px}
+}
+@media (max-width:520px){
+  .abt-stage{padding:14px;border-radius:28px;gap:14px}
+  .abt-photo{border-radius:24px}
+  .abt-win{border-radius:20px}
+  .abt-body{padding:24px 22px 28px}
+  .abt-widgets{grid-template-columns:1fr}
+  .wg{min-height:0;border-radius:26px}
+  .wg-num{margin-top:6px}.wg-cap{margin-top:0}
+}
+@media (prefers-reduced-transparency:reduce){
+  .abt-win,.wg-before,.abt-photo figcaption{-webkit-backdrop-filter:none;backdrop-filter:none;background:#fff}
+}
+@media (max-width:1000px){.links{top:52px}}
+@media (max-width:820px){.links{top:52px}}
+@media (max-width:640px){section{padding:72px 0}.hero{padding-top:104px}.pl,.pr{padding:28px 22px}}
+
+/* ===== APPLE OS: materials + motion ===== */
+:root{--ease:cubic-bezier(.16,1,.3,1);--spring:cubic-bezier(.34,1.3,.64,1)}
+::selection{background:rgba(0,113,227,.22)}
+:focus-visible{outline:3px solid rgba(0,113,227,.55);outline-offset:3px;border-radius:8px}
+#s1:focus-visible~.tabnav label[for=s1],#s2:focus-visible~.tabnav label[for=s2],#s3:focus-visible~.tabnav label[for=s3],#s4:focus-visible~.tabnav label[for=s4]{outline:3px solid rgba(0,113,227,.55);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* entrance: blur + scale, like system sheets */
+@keyframes up{from{opacity:0;transform:translateY(22px) scale(.985);filter:blur(8px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes rowin{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:translateY(10px) scale(.86)}100%{opacity:1;transform:none}}
+@keyframes drift{from{transform:translate3d(-3%,2%,0) rotate(0deg) scale(1.05)}to{transform:translate3d(3%,-2%,0) rotate(5deg) scale(1.14)}}
+
+/* scroll reveal */
+html.js .rv{opacity:0;transform:translateY(34px) scale(.975);filter:blur(8px);transition:opacity 1s var(--ease),transform 1.1s var(--ease),filter .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none;filter:none}
+html.js .rv.rv-done{transition:transform .6s var(--spring),box-shadow .5s var(--ease),border-color .3s,opacity .3s}
+
+/* header: material thickens on scroll, active pill follows section */
+header{transition:background .4s,box-shadow .4s}
+header.scrolled{background:rgba(255,255,255,.88);box-shadow:0 1px 0 rgba(0,0,0,.04),0 10px 30px -14px rgba(0,0,0,.14)}
+.links a{transition:background .3s var(--ease),color .3s}
+.links a:hover{background:rgba(0,0,0,.05);color:#000}
+.links a.on{background:rgba(0,0,0,.07);color:#000}
+
+/* buttons: spring hover + press */
+.btn{transition:transform .45s var(--spring),background .25s,color .25s,border-color .25s}
+.btn:hover{transform:scale(1.03)}
+.btn:active{transform:scale(.95);transition-duration:.12s}
+
+/* hero window: scroll-linked tilt, then a one-time reply → booking sequence */
+.stage .ui{transform-origin:50% 0;will-change:transform}
+.m-r{animation:rowin .8s var(--ease) both}
+.m-r:nth-child(2){animation-delay:.75s}.m-r:nth-child(3){animation-delay:.85s}.m-r:nth-child(4){animation-delay:.95s}.m-r:nth-child(5){animation-delay:1.05s}.m-r:nth-child(6){animation-delay:1.15s}
+.m-msg{animation:rowin .8s 1.2s var(--ease) both}
+.m-msg.me{animation:pop .7s 1.7s var(--spring) both}
+.m-book{animation:pop .8s 2.3s var(--spring) both}
+
+/* macOS traffic lights show glyphs on hover */
+.ui-bar i,.abt-dots i{position:relative}
+.ui-bar i::after,.abt-dots i::after{display:grid;place-items:center;position:absolute;inset:0;font:700 9px/1 var(--font);color:rgba(40,0,0,.6);opacity:0;transition:opacity .15s}
+.ui-bar i:nth-child(1)::after,.abt-dots i:nth-child(1)::after{content:"×"}
+.ui-bar i:nth-child(2)::after,.abt-dots i:nth-child(2)::after{content:"–"}
+.ui-bar i:nth-child(3)::after,.abt-dots i:nth-child(3)::after{content:"+"}
+.ui-bar:hover i::after,.abt-bar:hover i::after{opacity:1}
+
+/* cards: lift with a spring once revealed */
+html.js .card.rv-done:hover,html.js .plan.rv-done:hover{transform:translateY(-6px) scale(1.012);box-shadow:0 0 0 .5px rgba(0,0,0,.06),0 34px 60px -22px rgba(0,0,0,.24)}
+html.js .plan.hot.rv-done:hover{box-shadow:0 0 0 2px var(--blue),0 34px 60px -22px rgba(0,113,227,.35)}
+
+/* segmented control: sliding thumb (desktop) */
+@media (min-width:1001px){
+  .tabnav{position:relative}
+  .tabnav::before{content:"";position:absolute;top:4px;bottom:4px;left:4px;width:calc((100% - 14px)/4);border-radius:14px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.12),0 0 0 .5px rgba(0,0,0,.04);transition:transform .6s var(--spring)}
+  #s2:checked~.tabnav::before{transform:translateX(calc(100% + 2px))}
+  #s3:checked~.tabnav::before{transform:translateX(calc(200% + 4px))}
+  #s4:checked~.tabnav::before{transform:translateX(calc(300% + 6px))}
+  .tabnav label{position:relative;z-index:1}
+  #s1:checked~.tabnav label[for=s1],#s2:checked~.tabnav label[for=s2],#s3:checked~.tabnav label[for=s3],#s4:checked~.tabnav label[for=s4]{background:transparent;box-shadow:none}
+}
+
+/* about: drifting wallpaper + tvOS-style tilt and glare */
+.abt-stage{background:#eef0f6;overflow:hidden}
+.abt-stage::before{content:"";position:absolute;inset:-25%;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(40% 45% at 18% 12%,#d9e8ff 0,transparent 62%),
+    radial-gradient(35% 40% at 85% 18%,#ffe4d4 0,transparent 60%),
+    radial-gradient(42% 46% at 82% 88%,#e6dcfa 0,transparent 62%),
+    radial-gradient(38% 42% at 14% 90%,#d6f1e6 0,transparent 60%);
+  animation:drift 26s ease-in-out infinite alternate}
+.abt-photo,.wg{overflow:hidden;will-change:transform}
+.abt-photo figcaption{z-index:2}
+.abt-photo::after,.wg::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(420px circle at var(--gx,50%) var(--gy,0%),rgba(255,255,255,.38),transparent 55%)}
+.abt-photo.tilt::after,.wg.tilt::after{opacity:1}
+.abt-photo.tilt,.wg.tilt{box-shadow:0 0 0 .5px rgba(0,0,0,.1),0 40px 70px -26px rgba(30,40,80,.5)}
+html.js .abt-win.rv:not(.in){transform:translateY(44px) scale(.94)}
+
+/* ===== footer ===== */
+footer{background:var(--gray);border-top:1px solid #d2d2d7;color:var(--sec);font-size:13px;line-height:1.5;padding:64px 0 28px}
+.ft-top{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,2fr);gap:64px;padding-bottom:48px}
+.ft-brand{display:flex;flex-direction:column;gap:14px;max-width:46ch}
+.ft-brand .logo{font-size:17px;margin-bottom:2px}
+.ft-brand p{font-size:14px;line-height:1.55;color:#424245}
+.ft-cta{width:100%;margin-top:10px;padding:22px;border-radius:24px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.06),0 20px 40px -26px rgba(0,0,0,.2);display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.ft-cta h3{font-size:18px;line-height:1.25;letter-spacing:-.02em;max-width:none}
+.ft-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.ft-col{display:flex;flex-direction:column;gap:28px;align-content:start}
+.ft-grp h3{font-size:12px;font-weight:600;letter-spacing:-.005em;color:var(--ink);margin:0 0 12px;line-height:1.3}
+.ft-grp ul{display:grid;gap:9px}
+.ft-grp a{position:relative;color:#424245;transition:color .2s}
+.ft-grp a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.ft-grp a:hover{color:var(--blue)}.ft-grp a:hover::after{transform:scaleX(1)}
+.ft-note{display:grid;gap:10px;padding:28px 0;border-top:1px solid #d2d2d7;font-size:12px;line-height:1.55;color:var(--sec)}
+@media (min-width:981px){.ft-note{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}}
+.ft-base{padding-top:20px;border-top:1px solid #d2d2d7;font-size:12px;color:var(--sec)}
+@media (max-width:980px){.ft-top{grid-template-columns:1fr;gap:44px}.ft-brand{max-width:none}}
+@media (max-width:620px){footer{padding-top:48px}.ft-cols{grid-template-columns:1fr 1fr;gap:36px 24px}}
+
+/* ===== SAMPLES: cards, dock, sheets ===== */
+#samples{background:var(--gray)}
+.sp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.sp-card{display:flex;flex-direction:column;padding:0;border:0;text-align:left;font:inherit;color:inherit;cursor:pointer;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 0 0 .5px rgba(0,0,0,.06),0 18px 40px -26px rgba(0,0,0,.25)}
+html.js .sp-card.rv-done:hover{transform:translateY(-6px) scale(1.012);box-shadow:0 0 0 .5px rgba(0,0,0,.06),0 34px 60px -24px rgba(0,0,0,.28)}
+html.js .sp-card.rv-done:active{transform:scale(.98);transition-duration:.12s}
+.sp-vis{display:block;position:relative;height:200px;overflow:hidden;background:linear-gradient(160deg,var(--v1),var(--v2))}
+.sp-demo{font-style:normal;position:absolute;z-index:3;top:14px;left:16px;font-size:12px;font-weight:600;color:#424245;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.mini{position:absolute;left:22px;right:22px;top:54px;display:grid;gap:8px;padding:12px 14px;border-radius:16px;background:rgba(255,255,255,.9);box-shadow:0 0 0 .5px rgba(0,0,0,.06),0 18px 30px -16px rgba(30,40,80,.35);font-size:12px;color:#424245;transition:transform .6s var(--spring)}
+.sp-card:hover .mini{transform:translateY(-4px)}
+.mini .r{display:grid;grid-template-columns:54px 1fr auto;gap:10px;align-items:center}
+.mini .r b{font-weight:600;color:var(--ink)}
+.mini.b1,.mini.b2{height:90px;opacity:.7}
+.mini.b1{top:64px;left:34px;right:34px}.mini.b2{top:74px;left:46px;right:46px;opacity:.45}
+.mini.f{z-index:2;gap:6px}
+.mini .sj{font-weight:600;color:var(--ink);font-size:13px}
+.mini .ln{height:6px;border-radius:3px;background:#e5e5ea}
+.mini .ln.s{width:70%}
+.mini .mb{display:grid;grid-template-columns:68px 1fr;gap:10px;align-items:center}
+.sp-tok{display:inline-block;padding:1px 7px;border-radius:6px;background:rgba(0,113,227,.12);color:#0a60d6;font-weight:600;font-size:.92em;white-space:nowrap}
+.sp-pill{display:inline-block;padding:3px 10px;border-radius:999px;background:rgba(0,113,227,.1);color:#0a60d6;font-size:12.5px;font-weight:600}
+.sp-st{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:500;white-space:nowrap;font-style:normal}
+.sp-st.ok{background:rgba(52,199,89,.16);color:#1a7a35}.sp-st.warn{background:rgba(255,149,0,.16);color:#9a5200}.sp-st.no{background:#ececf1;color:#55555a}
+.sp-txt{display:flex;flex-direction:column;gap:6px;padding:22px 24px 24px}
+.sp-h{font-size:21px;font-weight:600;letter-spacing:-.022em;color:var(--ink);line-height:1.2}
+.sp-p{font-size:15px;line-height:1.45;color:var(--sec)}
+.sp-go{margin-top:10px;display:inline-flex;align-items:center;gap:4px;font-size:14.5px;font-weight:600;color:var(--blue)}
+.sp-go svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .4s var(--spring)}
+.sp-card:hover .sp-go svg{transform:translateX(4px)}
+.sp-note{margin:28px auto 0;text-align:center;font-size:13px;color:var(--sec);max-width:62ch}
+
+/* dock */
+.dock-wrap{margin:72px auto 0;display:flex;flex-direction:column;align-items:center;gap:34px}
+.dock-h{font-size:15px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+.dock{display:flex;gap:22px;padding:14px 22px 12px;border-radius:30px;background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);box-shadow:0 0 0 .5px rgba(0,0,0,.08),0 24px 40px -26px rgba(0,0,0,.3)}
+.dock li{display:flex;flex-direction:column;align-items:center;gap:8px;width:68px}
+.dock .ic{display:grid;place-items:center;width:60px;height:60px;border-radius:16px;font-size:26px;font-weight:700;letter-spacing:-.03em;color:#fff;background:linear-gradient(160deg,var(--a),var(--b));box-shadow:0 0 0 .5px rgba(0,0,0,.1) inset,0 8px 14px -8px rgba(0,0,0,.4);transform-origin:50% 100%;transition:transform .45s var(--spring)}
+.dock li:hover .ic{transform:translateY(-8px) scale(1.28)}
+.dock li:hover + li .ic,.dock li:has(+ li:hover) .ic{transform:translateY(-3px) scale(1.1)}
+.dock .lb{font-size:12.5px;font-weight:500;color:#424245}
+
+/* sheets (native dialog styled as a macOS window) */
+html:has(dialog[open]){overflow:hidden}
+dialog.sheet{border:0;padding:0;background:transparent;width:calc(100% - 24px);max-width:940px;max-height:none;overflow:visible;color:var(--sec)}
+dialog.sheet::backdrop{background:rgba(20,22,32,.34);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+dialog.sheet[open]::backdrop{animation:fadein .35s var(--ease) both}
+dialog.sheet.closing::backdrop{animation:fadeout .2s both}
+@keyframes fadein{from{opacity:0}to{opacity:1}}@keyframes fadeout{to{opacity:0}}
+@keyframes sheetin{from{opacity:0;transform:translateY(24px) scale(.92)}to{opacity:1;transform:none}}
+@keyframes sheetout{to{opacity:0;transform:translateY(12px) scale(.96)}}
+@keyframes barin{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+dialog.sheet[open] .sheet-win{animation:sheetin .55s var(--spring) both}
+dialog.sheet.closing .sheet-win{animation:sheetout .2s ease-in both}
+.sheet-win{display:flex;flex-direction:column;max-height:calc(100dvh - 32px);border-radius:26px;overflow:hidden;background:rgba(250,250,252,.92);-webkit-backdrop-filter:blur(40px) saturate(180%);backdrop-filter:blur(40px) saturate(180%);box-shadow:0 0 0 .5px rgba(0,0,0,.14),0 60px 120px -30px rgba(0,0,0,.5)}
+.sheet-bar{display:grid;grid-template-columns:76px minmax(0,1fr) 76px;align-items:center;height:54px;padding:0 18px;border-bottom:1px solid rgba(0,0,0,.07);flex:none}
+.sheet-dots{display:flex;gap:8px;align-items:center}
+.sheet-dots>*{width:12px;height:12px;border-radius:50%;padding:0;border:0;box-shadow:inset 0 0 0 .5px rgba(0,0,0,.16);position:relative}
+.sheet-dots>:nth-child(1){background:#ff5f57;cursor:pointer}.sheet-dots>:nth-child(2){background:#febc2e}.sheet-dots>:nth-child(3){background:#28c840}
+.sheet-close::before{content:"";position:absolute;inset:-9px}
+.sheet-close::after{content:"×";position:absolute;inset:0;display:grid;place-items:center;font:700 9px/1 var(--font);color:rgba(60,0,0,.6);opacity:0;transition:opacity .15s}
+.sheet-dots:hover .sheet-close::after,.sheet-close:focus-visible::after{opacity:1}
+.sheet-title{font-size:13.5px;font-weight:600;letter-spacing:-.005em;color:#424245;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.2}
+.sheet-done{justify-self:end;border:0;background:none;font:600 15px/1 var(--font);color:var(--blue);padding:10px 4px;cursor:pointer;border-radius:8px;transition:transform .3s var(--spring)}
+.sheet-done:active{transform:scale(.94)}
+.sheet-body{overflow:auto;padding:28px 32px 34px;display:grid;gap:22px;overscroll-behavior:contain}
+.sheet-body h3.sh{font-size:clamp(1.4rem,2.6vw,1.85rem);font-weight:600;letter-spacing:-.028em;line-height:1.12}
+.sh-p{font-size:16px;line-height:1.5;color:#424245;max-width:62ch;margin-top:8px}
+.sp-demo-banner{display:flex;gap:10px;align-items:center;padding:11px 14px;border-radius:14px;background:rgba(255,149,0,.12);color:#7a4300;font-size:13.5px;line-height:1.4}
+.sp-badge{flex:none;padding:2px 9px;border-radius:7px;background:#ff9500;color:#fff;font-size:12px;font-weight:700;letter-spacing:.01em}
+.sp-cap{font-size:14px;color:var(--sec);line-height:1.45}
+
+/* segmented control */
+.seg{position:relative;display:inline-flex;justify-self:start;padding:3px;border-radius:12px;background:#e8e8ed;max-width:100%}
+.seg button{position:relative;z-index:1;border:0;background:none;font:500 13.5px/1 var(--font);color:var(--sec);padding:10px 18px;border-radius:9px;cursor:pointer;white-space:nowrap;transition:color .25s}
+.seg button[aria-selected=true]{color:var(--ink)}
+.seg-thumb{position:absolute;top:3px;bottom:3px;left:0;width:var(--w,0);transform:translateX(var(--x,0));border-radius:9px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.14),0 0 0 .5px rgba(0,0,0,.04);transition:transform .5s var(--spring),width .5s var(--spring)}
+.sp-panel{display:grid;gap:16px}
+.sp-panel[hidden]{display:none}
+.sp-panel:not([hidden]){animation:up .5s var(--ease) both}
+
+/* table */
+.tbl-wrap{overflow-x:auto;border-radius:18px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.08)}
+.tbl{width:100%;min-width:640px;border-collapse:collapse;font-size:14px;text-align:left}
+.tbl th{padding:12px 16px;font-size:12.5px;font-weight:600;color:var(--sec);background:#f5f5f7;white-space:nowrap}
+.tbl td{padding:13px 16px;border-top:1px solid #ececf0;color:#424245}
+.tbl td:first-child{color:var(--ink);font-weight:500}
+.crit{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+.crit li{position:relative;padding-left:30px;font-size:14.5px;line-height:1.4;color:#424245}
+.crit li::before{content:"";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:#34c759 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.sh-s{font-size:15px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+
+/* sequence */
+.ms-list{display:grid;gap:12px}
+.ms{display:grid;grid-template-columns:58px minmax(0,1fr);gap:12px}
+.ms-day{justify-self:end;margin-top:14px;font-size:12.5px;font-weight:600;color:var(--sec);white-space:nowrap}
+.ms-card{padding:16px 18px;border-radius:18px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.08);display:grid;gap:8px}
+.ms-subj{font-size:14.5px;font-weight:600;color:var(--ink)}
+.ms-body{font-size:14.5px;line-height:1.55;color:#424245}
+.sp-hl{border-radius:5px;padding:1px 3px;margin:0 -3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hl-a{background:rgba(0,113,227,.12)}.hl-b{background:rgba(52,199,89,.18)}.hl-c{background:rgba(255,149,0,.2)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:13px;color:#424245;padding-left:70px}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+
+/* angles */
+.ag{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.ag-t{display:grid;gap:10px;align-content:start;padding:20px;border-radius:24px;background:var(--bg)}
+.ag-ic{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(160deg,var(--a),var(--b))}
+.ag-ic svg{width:19px;height:19px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ag-t h4{font-size:17px;font-weight:600;letter-spacing:-.02em;color:var(--ink);line-height:1.2;margin-top:4px}
+.ag-t p{font-size:14.5px;line-height:1.45;color:#424245}
+.ag-s{margin-top:6px;padding-top:12px;border-top:1px solid rgba(0,0,0,.08);font-size:13px;color:var(--sec)}
+.ag-s b{display:block;margin-top:2px;font-size:14px;font-weight:600;color:var(--ink);line-height:1.35}
+
+/* sample email */
+.cp{display:grid;gap:14px;padding:20px 22px;border-radius:20px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.08)}
+.cp-hd{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between}
+.cp-hd strong{font-size:15px;color:var(--ink);font-weight:600}
+.cp-hd small{display:block;font-size:13px;color:var(--sec);font-weight:400;margin-top:2px}
+.cp-text{font-size:15px;line-height:1.6;color:#424245;white-space:pre-line;padding:16px 18px;border-radius:14px;background:#f5f5f7}
+.cp-text .sj{display:block;margin-bottom:10px;color:var(--ink);font-weight:600}
+.cp-ft{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.cp-ft p{font-size:13px;color:var(--sec);max-width:56ch}
+.sheet .btn.sm{height:36px;padding:0 16px;font-size:14px}
+
+/* dashboard */
+.mt-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.mt{padding:16px 16px 18px;border-radius:20px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.08);display:grid;gap:4px;align-content:start}
+.mt small{font-size:13px;color:var(--sec)}
+.mt strong{font-size:30px;font-weight:600;letter-spacing:-.04em;line-height:1.1;color:var(--ink)}
+.mt strong.ok{font-size:22px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px;margin-top:5px}
+.mt strong.ok::before{content:"";width:10px;height:10px;border-radius:50%;background:#34c759;box-shadow:0 0 0 4px rgba(52,199,89,.2)}
+.sp-bar{height:8px;border-radius:99px;background:#e5e5ea;overflow:hidden;margin-top:8px}
+.sp-bar i{display:block;height:100%;width:var(--w);border-radius:99px;background:var(--c,#007aff);transform-origin:left}
+dialog[open] .sp-bar i{animation:barin 1s var(--ease) .25s both}
+.dash-hd{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.sp-cmp{display:grid;gap:4px;padding:6px 18px;border-radius:20px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.08)}
+.sp-cmp .cr{display:grid;grid-template-columns:150px minmax(0,1fr) 108px 84px;gap:16px;align-items:center;padding:14px 0;font-size:14px;color:#424245}
+.sp-cmp .cr+.cr{border-top:1px solid #ececf0}
+.sp-cmp .cr.h{padding:10px 0;font-size:12.5px;font-weight:600;color:var(--sec)}
+.sp-cmp .cr b{color:var(--ink);font-weight:600}
+.sp-cmp .sp-bar{margin:0}
+.dec{display:grid;gap:8px}
+.dec li{position:relative;padding-left:22px;font-size:14.5px;line-height:1.45;color:#424245}
+.dec li::before{content:"";position:absolute;left:3px;top:.5em;width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.wf{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.wf li{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--ink)}
+.wf li span{padding:9px 15px;border-radius:999px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.1)}
+.wf li+li::before{content:"";width:7px;height:7px;border-top:2px solid #aeaeb2;border-right:2px solid #aeaeb2;transform:rotate(45deg);margin-right:2px}
+
+@media (max-width:900px){
+  .sp-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+  .ag{grid-template-columns:1fr}
+  .mt-grid{grid-template-columns:1fr 1fr}
+  .crit{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .sheet-body{padding:22px 18px 28px}
+  .sheet-bar{grid-template-columns:44px minmax(0,1fr) 56px;padding:0 14px}
+  .sheet-dots>:nth-child(n+2){display:none}
+  .ms{grid-template-columns:1fr;gap:6px}.ms-day{justify-self:start;margin:0}
+  .legend{padding-left:0}
+  .sp-cmp .cr{grid-template-columns:minmax(0,1fr) auto;gap:6px 12px}
+  .sp-cmp .cr .sp-bar{grid-column:1 / -1;order:3}
+  .sp-cmp .cr.h{display:none}
+  .dock{gap:6px;padding:12px 10px 10px}.dock li{width:56px}.dock .ic{width:50px;height:50px;font-size:22px;border-radius:14px}.dock .lb{font-size:11.5px}
+  .seg button{padding:10px 12px;font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){dialog.sheet .sheet-win,dialog.sheet::backdrop{animation:none!important}}
+
+/* ===== FAQ: macOS System Settings ===== */
+#faq{background:#fff}
+.fq-win{background:#fff}
+.fq-body{display:grid;grid-template-columns:288px minmax(0,1fr);min-height:600px}
+.fq-side{padding:18px 14px;background:rgba(245,245,247,.92);border-right:1px solid rgba(0,0,0,.07);display:flex;flex-direction:column;gap:14px}
+.fq-search{display:flex;align-items:center;gap:8px;padding:0 12px;height:38px;border-radius:10px;background:#e8e8ed;transition:box-shadow .25s,background .25s}
+.fq-search:focus-within{background:#fff;box-shadow:0 0 0 3px rgba(0,113,227,.4)}
+.fq-search svg{width:16px;height:16px;flex:none;fill:none;stroke:#8e8e93;stroke-width:2.2;stroke-linecap:round}
+.fq-search input{flex:1;min-width:0;border:0;outline:0;background:none;font:400 15px/1 var(--font);color:var(--ink);-webkit-appearance:none;appearance:none}
+.fq-search input::placeholder{color:#8e8e93}
+.fq-search input::-webkit-search-cancel-button{cursor:pointer}
+.fq-cats{display:grid;gap:2px}
+.fq-cat{display:flex;align-items:center;gap:11px;width:100%;padding:8px 10px;border:0;border-radius:10px;background:none;font:500 14.5px/1.2 var(--font);color:var(--ink);text-align:left;cursor:pointer;transition:background .25s,color .25s,transform .35s var(--spring)}
+.fq-cat:hover{background:rgba(0,0,0,.05)}
+.fq-cat:active{transform:scale(.97)}
+.fq-cat[aria-pressed=true]{background:var(--blue);color:#fff}
+.fq-ic{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;flex:none;background:linear-gradient(160deg,var(--a),var(--b));box-shadow:0 0 0 .5px rgba(0,0,0,.1) inset}
+.fq-ic svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.fq-cn{flex:1;min-width:0}
+.fq-n{font-size:13px;font-weight:500;color:#8e8e93}
+.fq-cat[aria-pressed=true] .fq-n{color:rgba(255,255,255,.85)}
+.fq-main{padding:34px 40px 40px;min-width:0}
+.fq-title{font-size:clamp(1.5rem,2.6vw,1.95rem);font-weight:600;letter-spacing:-.03em;line-height:1.1}
+.fq-count{margin-top:6px;font-size:14px;color:var(--sec)}
+.fq-list{margin-top:22px;border-radius:20px;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.1),0 18px 36px -26px rgba(0,0,0,.25);overflow:hidden}
+.fq-in{margin-top:-1px}
+.fq-item{border-top:1px solid #e5e5ea}
+.fq-item[hidden]{display:none}
+.fq-q{margin:0;font-size:inherit;line-height:inherit;letter-spacing:0;font-weight:inherit}
+.fq-q button{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:18px 22px;border:0;background:none;font:500 16.5px/1.35 var(--font);letter-spacing:-.012em;color:var(--ink);text-align:left;cursor:pointer;transition:background .25s}
+.fq-q button:hover{background:#f5f5f7}
+.fq-q button:focus-visible{outline-offset:-3px;border-radius:12px}
+.fq-q svg{width:18px;height:18px;flex:none;fill:none;stroke:#8e8e93;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .5s var(--spring),stroke .25s}
+.fq-item.open .fq-q svg{transform:rotate(180deg);stroke:var(--blue)}
+.fq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.fq-a>div{overflow:hidden;min-height:0;visibility:hidden;opacity:0;transition:visibility 0s .5s,opacity .35s}
+.fq-a p{padding:0 56px 22px 22px;font-size:15.5px;line-height:1.6;color:#424245;max-width:68ch}
+.fq-item.open .fq-a{grid-template-rows:1fr}
+.fq-item.open .fq-a>div{visibility:visible;opacity:1;transition:visibility 0s,opacity .5s .08s}
+.fq-empty{margin-top:22px;display:grid;gap:6px;justify-items:start;padding:24px;border-radius:20px;background:#f5f5f7}
+.fq-empty[hidden]{display:none}
+.fq-empty strong{font-size:17px;color:var(--ink);letter-spacing:-.015em}
+.fq-empty span{font-size:15px;color:var(--sec);margin-bottom:8px}
+.fq-more{margin-top:22px;font-size:14.5px;color:var(--sec)}
+.fq-more a{color:var(--blue);font-weight:500}.fq-more a:hover{text-decoration:underline}
+@media (max-width:820px){
+  .fq-body{grid-template-columns:minmax(0,1fr);min-height:0}
+  .fq-side,.fq-main{min-width:0}
+  .fq-side{border-right:0;border-bottom:1px solid rgba(0,0,0,.07);padding:14px}
+  .fq-cats{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -14px;padding:0 14px}
+  .fq-cats::-webkit-scrollbar{display:none}
+  .fq-cat{width:auto;flex:none;padding:8px 14px 8px 8px;border-radius:999px;background:#e8e8ed;white-space:nowrap}
+  .fq-cat:hover{background:#dcdce1}.fq-cat[aria-pressed=true]{background:var(--blue)}
+  .fq-n{display:none}
+  .fq-main{padding:24px 16px 28px}
+  .fq-q button{padding:16px 16px;font-size:16px}
+  .fq-a p{padding:0 16px 20px}
+}
+
+/* ===== Apple pass: labels, checks, booking placeholder ===== */
+.tag,.kicker{font-size:13px;font-weight:600;letter-spacing:0;color:var(--sec)}
+.side b,.m-lb{letter-spacing:0;text-transform:none}
+.tabnav label span{font-size:12.5px;font-weight:600;letter-spacing:0}
+.plan li::before{left:0;top:13px;width:18px;height:18px;border:0;transform:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230071e3' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/18px no-repeat}
+.calendar{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:0;border-radius:24px;background:#fff;color:var(--sec);font-size:15px;box-shadow:0 0 0 .5px rgba(0,0,0,.08),0 30px 60px -34px rgba(30,40,80,.35)}
+.calendar::before{content:"";width:64px;height:64px;border-radius:16px;background:
+  linear-gradient(#ff3b30 0 20px,#fff 20px) ,#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.12),0 10px 18px -10px rgba(0,0,0,.35)}
+
+/* ===== ABOUT: founder ID badge ===== */
+#about{position:relative;overflow:hidden;padding:0 0 104px;background:#fff}
+.bd-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;align-items:start}
+.bd-col{position:relative;display:flex;flex-direction:column;align-items:center}
+.bd-col::before{content:"";position:absolute;left:50%;top:230px;width:520px;height:520px;max-width:120%;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,#eef2fb,transparent);z-index:-1}
+.bd-swing{position:relative;display:flex;flex-direction:column;align-items:center;transform-origin:50% 0}
+html.js .bd-col:not(.bd-on) .bd-swing{opacity:0}
+.bd-on .bd-swing{animation:bdswing 4.6s cubic-bezier(.37,0,.2,1) both,bddrop .9s var(--ease) both}
+@keyframes bdswing{0%{rotate:9deg}18%{rotate:-6.5deg}36%{rotate:4.2deg}54%{rotate:-2.4deg}72%{rotate:1.3deg}88%{rotate:-.5deg}100%{rotate:0deg}}
+@keyframes bddrop{from{opacity:0;translate:0 -70px}to{opacity:1;translate:0 0}}
+/* lanyard */
+.bd-strap{width:30px;height:190px;margin-top:-60px;flex:none;border-radius:0 0 3px 3px;position:relative;z-index:1;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='60' viewBox='0 0 30 60'%3E%3Cg transform='translate(7.5 19) scale(.235)' fill='none' stroke='white' stroke-opacity='.55' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M23 49V16h13a10 10 0 010 20H23'/%3E%3C/g%3E%3C/svg%3E") center top/30px 60px repeat-y,
+    linear-gradient(90deg,#0a5fc2,#2b9bff 32%,#1a85ee 58%,#0058b8);
+  box-shadow:inset 3px 0 0 rgba(255,255,255,.28),inset -3px 0 0 rgba(0,0,0,.14)}
+.bd-clip{position:absolute;z-index:3;top:84px;left:50%;width:44px;height:50px;transform:translateX(-50%);border-radius:10px 10px 14px 14px;
+  background:linear-gradient(90deg,#9a9aa1,#f3f3f6 35%,#c9c9cf 60%,#8d8d94);box-shadow:0 6px 10px -4px rgba(0,0,0,.4),inset 0 0 0 .5px rgba(0,0,0,.25)}
+.bd-clip::after{content:"";position:absolute;left:50%;bottom:7px;width:20px;height:9px;transform:translateX(-50%);border-radius:99px;background:#6b6b72;box-shadow:inset 0 2px 3px rgba(0,0,0,.5)}
+/* card */
+.bd-persp{perspective:1400px;margin-top:-14px;position:relative;z-index:2}
+.bd-tilt{transform-style:preserve-3d;transition:transform .7s var(--spring)}
+.bd-card{position:relative;width:min(320px,78vw);aspect-ratio:320/508;transform-style:preserve-3d;transition:transform .9s var(--spring);cursor:pointer}
+.bd-card.flipped{transform:rotateY(180deg)}
+.bd-face{position:absolute;inset:0;display:flex;flex-direction:column;gap:14px;padding:34px 20px 20px;border-radius:30px;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.bd-front{background:linear-gradient(165deg,#ffffff,#f1f1f5);color:var(--ink);box-shadow:0 0 0 .5px rgba(0,0,0,.14),0 1px 0 #fff inset,0 50px 70px -34px rgba(20,30,70,.5),0 18px 28px -18px rgba(20,30,70,.3)}
+.bd-back{transform:rotateY(180deg);background:linear-gradient(160deg,#3a3a3d,#1b1b1d);color:#f5f5f7;justify-content:space-between;box-shadow:0 0 0 .5px rgba(0,0,0,.5),0 50px 70px -34px rgba(20,30,70,.6)}
+.bd-face::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:radial-gradient(360px circle at var(--gx,30%) var(--gy,0%),rgba(255,255,255,.55),transparent 58%);opacity:var(--gl,.35);transition:opacity .4s}
+.bd-back::after{background:radial-gradient(360px circle at var(--gx,30%) var(--gy,0%),rgba(255,255,255,.22),transparent 58%)}
+.bd-slot{position:absolute;top:13px;left:50%;width:62px;height:12px;transform:translateX(-50%);border-radius:99px;background:#dcdce2;box-shadow:inset 0 2px 3px rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.9)}
+.bd-back .bd-slot{background:#101012;box-shadow:inset 0 2px 3px rgba(0,0,0,.7),0 1px 0 rgba(255,255,255,.12)}
+.bd-top{display:flex;align-items:center;gap:8px}
+.bd-brand{font-size:14px;font-weight:600;letter-spacing:-.01em;flex:1}
+.bd-nfc{width:22px;height:22px;fill:none;stroke:#8e8e93;stroke-width:2;stroke-linecap:round}
+.bd-mark{display:grid;place-items:center;width:26px;height:26px;flex:none;border-radius:7px;background:linear-gradient(#2b9bff,#0062d6);box-shadow:0 0 0 .5px rgba(0,0,0,.15) inset}
+.bd-mark svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.bd-mark.big{width:76px;height:76px;border-radius:20px;box-shadow:0 14px 26px -12px rgba(0,98,214,.7)}
+.bd-mark.big svg{width:46px;height:46px}
+.bd-photo{flex:1;min-height:0;margin:0;position:relative;border-radius:20px;overflow:hidden;background:linear-gradient(160deg,#c9d3e6,#aab6cf);box-shadow:0 0 0 .5px rgba(0,0,0,.12)}
+.bd-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.bd-id{display:grid;gap:2px}
+.bd-id strong{font-size:26px;font-weight:600;letter-spacing:-.03em;line-height:1.1}
+.bd-id span{font-size:15px;color:var(--sec)}
+.bd-meta{display:flex;gap:26px;padding-top:12px;border-top:1px solid rgba(0,0,0,.09)}
+.bd-meta small{display:block;font-size:11.5px;color:#8e8e93;font-weight:500}
+.bd-meta b{font-size:14px;font-weight:600;letter-spacing:.01em;font-variant-numeric:tabular-nums}
+.bd-bar{height:30px;flex:none;border-radius:3px;background:repeating-linear-gradient(90deg,#1d1d1f 0 2px,transparent 2px 4px,#1d1d1f 4px 5px,transparent 5px 8px,#1d1d1f 8px 11px,transparent 11px 13px,#1d1d1f 13px 14px,transparent 14px 17px)}
+.bd-back .bd-bar{background:repeating-linear-gradient(90deg,#f5f5f7 0 2px,transparent 2px 4px,#f5f5f7 4px 5px,transparent 5px 8px,#f5f5f7 8px 11px,transparent 11px 13px,#f5f5f7 13px 14px,transparent 14px 17px);opacity:.85}
+.bd-bk-mid{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center}
+.bd-bk-mid b{margin-top:8px;font-size:21px;font-weight:600;letter-spacing:-.025em}
+.bd-bk-mid span:last-child{font-size:14px;color:#a1a1a6}
+.bd-flip{display:inline-flex;align-items:center;gap:8px;margin-top:26px;height:36px;padding:0 16px 0 12px;border:0;border-radius:999px;background:#f5f5f7;color:var(--ink);font:500 14px/1 var(--font);cursor:pointer;box-shadow:0 0 0 .5px rgba(0,0,0,.08);transition:transform .4s var(--spring),background .25s}
+.bd-flip:hover{background:#ececf0}.bd-flip:active{transform:scale(.95)}
+.bd-flip svg{width:17px;height:17px;fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+/* copy side */
+.bd-copy{padding-top:104px;min-width:0}
+.bd-copy .kicker{margin-bottom:10px;color:var(--blue)}
+.bd-copy h2{max-width:17ch;margin:0 0 28px;text-align:left;font-size:clamp(2rem,3.9vw,3rem);line-height:1.06}
+.bd-copy .abt-txt{max-width:58ch}
+.bd-copy .abt-widgets{margin-top:30px}
+.bd-copy .wg-before{background:#f5f5f7;-webkit-backdrop-filter:none;backdrop-filter:none}
+@media (max-width:980px){
+  .bd-grid{grid-template-columns:1fr;gap:20px}
+  .bd-copy{padding-top:24px}
+  .bd-copy h2{max-width:20ch}
+  #about{padding-bottom:72px}
+}
+@media (max-width:520px){.bd-strap{height:150px}.bd-clip{top:44px}}
+@media (prefers-reduced-motion:reduce){.bd-on .bd-swing{animation:none}.bd-tilt,.bd-card{transition:none}}
+
+/* ===== brand logo ===== */
+.logo img{width:30px;height:30px;flex:none;object-fit:contain}
+.ft-brand .logo img{width:34px;height:34px}
+img.bd-mark{display:block;width:30px;height:30px;border-radius:0;background:none;box-shadow:none;object-fit:contain}
+img.bd-mark.big{width:104px;height:104px;box-shadow:none;filter:drop-shadow(0 14px 20px rgba(0,98,214,.55))}
+.bd-photo img{object-position:50% 30%}
+
+/* ===== tool logos + calendly ===== */
+.dock .ic.logo{padding:0;overflow:hidden;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.12),0 8px 14px -8px rgba(0,0,0,.4)}
+.dock .ic.logo img{display:block;width:100%;height:100%;object-fit:cover}
+.cal-embed{margin:48px auto 0;max-width:860px;border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 0 0 .5px rgba(0,0,0,.08),0 30px 60px -34px rgba(30,40,80,.35);text-align:left}
+.cal-embed .calendly-inline-widget{display:block}
+.calendly-badge-widget{transition:opacity .35s,transform .5s var(--spring)}
+body.in-book .calendly-badge-widget{opacity:0;pointer-events:none;transform:translateY(24px)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does 100% done-for-you cold email mean?", "acceptedAnswer": {"@type": "Answer", "text": "We manage the outbound email process end to end, including prospect research, list building, infrastructure setup, copywriting, campaign execution, follow-ups and ongoing optimization. Reply handling and appointment booking are included when specified in your package."}}, {"@type": "Question", "name": "What do you need from us to get started?", "acceptedAnswer": {"@type": "Answer", "text": "We need to understand your offer, ideal customers, pricing, differentiators, sales process and goals. We’ll guide you through onboarding, gather the necessary information and work with you to approve the strategy before launch."}}, {"@type": "Question", "name": "How soon can we launch?", "acceptedAnswer": {"@type": "Answer", "text": "Timelines depend on onboarding, infrastructure readiness, targeting complexity and approvals. We establish a launch plan during onboarding and prioritize proper setup and quality assurance over rushing campaigns live."}}, {"@type": "Question", "name": "Do you guarantee leads or booked meetings?", "acceptedAnswer": {"@type": "Answer", "text": "We don’t promise specific results without a defined, substantiated basis. Outcomes depend on your offer, target market, data quality, messaging and sales process. Any contractual performance commitment will clearly define the target, qualification criteria and applicable terms."}}, {"@type": "Question", "name": "Do you handle replies and book meetings?", "acceptedAnswer": {"@type": "Answer", "text": "Reply monitoring and categorization are part of our agreed workflow. Prospect qualification, response handling and calendar booking depend on your selected package. We define these responsibilities before work begins."}}, {"@type": "Question", "name": "How do you choose which prospects to contact?", "acceptedAnswer": {"@type": "Answer", "text": "We define your ideal customer profile, identify relevant companies and decision-makers, enrich and validate contact information, and segment prospects based on fit and relevant business signals."}}, {"@type": "Question", "name": "Will cold emails reach the inbox?", "acceptedAnswer": {"@type": "Answer", "text": "We configure appropriate email authentication, monitor sending reputation, validate prospect data and follow responsible sending practices. These measures help manage deliverability, but no provider can guarantee inbox placement."}}, {"@type": "Question", "name": "What makes your service different from using cold email software ourselves?", "acceptedAnswer": {"@type": "Answer", "text": "Software provides the infrastructure. Our service provides the research, strategy, campaign creation, execution, monitoring and optimization needed to operate the system. You don’t have to manage the day-to-day outbound workflow yourself."}}, {"@type": "Question", "name": "How much does your service cost?", "acceptedAnswer": {"@type": "Answer", "text": "Pricing depends on campaign scope, target market complexity, sending infrastructure and the level of reply management or appointment setting required. We’ll outline the deliverables, fees and any additional costs before you commit."}}, {"@type": "Question", "name": "Do we need to provide our own email domains and software?", "acceptedAnswer": {"@type": "Answer", "text": "That depends on the agreed setup. We’ll explain which infrastructure we configure, which subscriptions are included, who owns the assets and which expenses are billed separately before onboarding."}}, {"@type": "Question", "name": "How do you measure performance?", "acceptedAnswer": {"@type": "Answer", "text": "We track relevant operational and campaign metrics, such as delivery health, bounce rates, positive replies, qualified meetings and meeting attendance where applicable. When CRM data is available, we can also assess pipeline contribution."}}, {"@type": "Question", "name": "What happens if a campaign isn’t performing?", "acceptedAnswer": {"@type": "Answer", "text": "We review targeting, offer-market fit, messaging, list quality and campaign health to identify likely issues. We then prioritize adjustments based on evidence and monitor the results rather than simply increasing sending volume."}}, {"@type": "Question", "name": "Is cold email compliant with privacy and anti-spam laws?", "acceptedAnswer": {"@type": "Answer", "text": "Requirements vary by recipient location, audience and outreach purpose. We establish appropriate data-handling, suppression and opt-out procedures for the engagement, while defining each party’s legal responsibilities in the agreement."}}, {"@type": "Question", "name": "How much time will we need to spend managing the service?", "acceptedAnswer": {"@type": "Answer", "text": "Your involvement is primarily needed during onboarding, strategy and copy approvals, and sales meetings with qualified prospects. We’ll manage routine execution and provide agreed updates, subject to the responsibilities defined in your package."}}, {"@type": "Question", "name": "Who owns the data, domains and campaign assets?", "acceptedAnswer": {"@type": "Answer", "text": "Ownership, access, retention and transfer arrangements are specified in our agreement. We aim to make responsibilities clear from the beginning and handle client information according to the agreed terms and applicable requirements."}}]}</script>
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="logo"><img src="assets/logo.png" alt="" width="30" height="30"><span>Pareto Pipeline</span></a>
+    <nav class="links" id="links" aria-label="Primary">
+      <a href="#why">Why Choose Us</a><a href="#how">How It Works</a><a href="#samples">Samples</a><a href="#about">About</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#book" class="btn sm">Book a 15-Min Call</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="links"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="tag"><i></i>Done-for-you B2B lead gen</span>
+    <h1 class="grad">Get Qualified B2B Sales Calls Without Doing the Manual Work.</h1>
+    <p class="lead">Stop spending 15 hours a week managing emails and lists. We build and run your entire client acquisition engine so you only show up to talk to buyers.</p>
+    <div class="actions"><a href="#book" class="btn">Book a 15-Minute Call</a></div>
+    <small>No domain risk. No mass spam. 100% hands-free.</small>
+
+    <div class="stage" aria-hidden="true"><div class="ui">
+<div class="ui-bar"><i></i><i></i><i></i><span>Inbox · Replies handled by your Pareto Pipeline team</span></div>
+<div class="mc">
+<div class="m-side"><div class="m-comp">Compose</div>
+<div class="m-i on"><svg viewBox="0 0 24 24"><path d="M3 13l3-8h12l3 8v6H3z"/><path d="M3 13h5l1 2h6l1-2h5"/></svg>Inbox<b>5</b></div><div class="m-i"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>Interested<b>2</b></div><div class="m-i"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Meetings booked<b>1</b></div>
+<div class="m-lb">Filtered</div><div class="m-i"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Out of office</div><div class="m-i"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg>Not interested</div></div>
+<div class="m-list"><div class="m-sr">Search replies</div>
+<div class="m-r on"><span class="m-av">DR</span><div><strong>Daniel Reyes</strong><p>Re: Quick question about pipeline</p><small>Sounds relevant. Open to a quick call…</small><span class="etag">Interested</span></div><span class="t">9:42 AM</span></div>
+<div class="m-r"><span class="m-av">PS</span><div><strong>Priya Shah</strong><p>Re: Idea for outbound at Lumen</p><small>Thursday at 2pm works for me.</small><span class="etag b">Meeting booked</span></div><span class="t">9:15 AM</span></div>
+<div class="m-r"><span class="m-av">LW</span><div><strong>Lena Wu</strong><p>Re: Quick question about pipeline</p><small>Can you send more detail on how…</small><span class="etag p">In conversation</span></div><span class="t">Mon</span></div>
+<div class="m-r"><span class="m-av">MC</span><div><strong>Marcus Cole</strong><p>Re: Idea for outbound at Cole &amp; Co</p><small>Not the right time, circle back in Q1.</small><span class="etag o">Nurture</span></div><span class="t">Sun</span></div>
+<div class="m-r"><span class="m-av">AR</span><div><strong>Auto-reply</strong><p>Out of office until Monday</p><small>Filtered from your inbox</small><span class="etag g">Filtered</span></div><span class="t">Sat</span></div></div>
+<div class="m-read"><div class="m-h"><h5>Re: Quick question about pipeline</h5></div>
+<div class="m-meta"><span class="m-av">DR</span><span><strong>Daniel Reyes</strong> · COO, Meridian Freight</span></div>
+<div class="m-msg"><b>9:42 AM</b>Sounds relevant. We’ve been doing outbound by hand and it’s inconsistent. Open to a quick call next week?</div>
+<div class="m-msg me"><b>Sent by your Pareto Pipeline team · 9:48 AM</b>Great to hear, Daniel. Happy to set that up. Does Thursday at 2:00 PM work? You can grab a time here.</div>
+<div class="m-book"><div class="m-cal"><i>OCT</i><b>29</b></div><div><strong>Intro call with Daniel Reyes</strong><span>Thursday · 2:00 – 2:15 PM</span></div><span class="etag b">Booked</span></div>
+</div></div></div><p class="cap">Illustrative interface with sample data.</p></div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="head"><span class="kicker">Why clients choose us</span><h2 class="grad">Built for founders who want real pipeline, not operational headaches.</h2></div>
+    <div class="bento">
+      <div class="card c4">
+        <h3>Primary Inbox Delivery &amp; Brand Protection</h3>
+        <p>Mass-spam agencies blast thousands of generic emails and ruin company reputations. We prioritize account precision and message quality so your communications land directly where buyers read them—while keeping your main corporate brand 100% safe.</p>
+        <div class="viz inbox" aria-hidden="true"><div class="on"><span>Primary</span><em>Delivered</em></div><div><span>Promotions</span><em>Skipped</em></div><div><span>Spam</span><em>Skipped</em></div></div>
+      </div>
+      <div class="card c2">
+        <h3>Complete Market Coverage (TAM)</h3>
+        <p>We thoroughly map your entire total addressable market to identify every relevant company and decision-maker, ensuring your offer reaches 100% of the buyers who can actually afford your service.</p>
+        <div class="viz rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="card c2">
+        <h3>Continuous Offer Testing</h3>
+        <p>Finding the right message requires testing. We run multi-angle copywriting and offer tests to see which angles convert best, continuously refining campaigns based on real reply data.</p>
+        <div class="viz bars" aria-hidden="true"><div style="--w:78%"><span>Angle A</span></div><div style="--w:52%"><span>Angle B</span></div><div style="--w:34%"><span>Angle C</span></div></div>
+      </div>
+      <div class="card c2">
+        <h3>Clear ROI Visibility From Day 1</h3>
+        <p>No mystery metrics or vague reports. You get complete visibility into campaign performance from day one, tracking opens, replies, and booked calls so you know your exact return on investment.</p>
+        <div class="viz bars" aria-hidden="true"><div style="--w:90%"><span>Opens</span></div><div style="--w:48%"><span>Replies</span></div><div style="--w:22%"><span>Booked</span></div></div>
+      </div>
+      <div class="card c2">
+        <h3>Truly 100% Hands-Free</h3>
+        <p>From strategic setup and list building to copywriting and daily email reply triage—we manage the entire process. You only step in when a qualified buyer books a time on your calendar.</p>
+        <div class="viz flow" aria-hidden="true"><span>We run it</span><b></b><span class="w">You take the call</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head"><span class="kicker">How it works</span><h2 class="grad">Four simple steps to a predictable sales pipeline.</h2><p>We take care of every single moving part behind the scenes so your leadership team can stay focused on closing deals and running your business.</p></div>
+    <div class="tabs rv">
+      <input type="radio" name="step" id="s1" checked aria-label="Step 1"><input type="radio" name="step" id="s2" aria-label="Step 2"><input type="radio" name="step" id="s3" aria-label="Step 3"><input type="radio" name="step" id="s4" aria-label="Step 4">
+      <div class="tabnav">
+        <label for="s1"><span>Step 1</span>Onboarding &amp; Market Mapping</label>
+        <label for="s2"><span>Step 2</span>Custom Copywriting &amp; Offer Testing</label>
+        <label for="s3"><span>Step 3</span>Launch &amp; Inbox Health Management</label>
+        <label for="s4"><span>Step 4</span>Daily Inbox Triage &amp; Calendar Bookings</label>
+      </div>
+      <div class="panels">
+        <article class="panel p1">
+          <div class="pl"><h3>Onboarding &amp; Market Mapping</h3><p class="sub">We define your ideal buyers and build a bulletproof target list.</p>
+            <ul>
+              <li><b>ICP Alignment</b>We hop on a quick onboarding call to pin down your exact ideal client profile—company size, industries, job titles, and contract values.</li>
+              <li><b>Verified Lead Data</b>We source and thoroughly clean contact lists so every message reaches active, verified decision-makers—zero dead addresses or wasted effort.</li>
+              <li><b>TAM Coverage</b>We map your total addressable market so no high-value target account slips through the cracks.</li>
+            </ul></div>
+          <div class="pr" aria-hidden="true">
+            <div class="vr"><span>Company size</span><b>Defined</b></div><div class="vr"><span>Industries</span><b>Defined</b></div><div class="vr"><span>Job titles</span><b>Defined</b></div><div class="vr"><span>Contract values</span><b>Defined</b></div>
+            <div class="vr on"><b>Verified decision-makers</b><span class="pill w">Ready</span></div>
+          </div>
+        </article>
+        <article class="panel p2">
+          <div class="pl"><h3>Custom Copywriting &amp; Offer Testing</h3><p class="sub">We craft peer-to-peer messages that start real conversations.</p>
+            <ul>
+              <li><b>No Corporate Jargon</b>We write short, plain-text emails that look and feel like a personal note from one executive to another—never marketing spam.</li>
+              <li><b>Multi-Angle Testing</b>We draft and test different subject lines, value propositions, and call-to-actions to uncover what resonates best with your market.</li>
+              <li><b>Brand Protection</b>Every message is crafted to build goodwill, preserving your professional standing in the market.</li>
+            </ul></div>
+          <div class="pr" aria-hidden="true">
+            <div class="vr"><span>Subject line</span><span class="pill">Angle A</span></div><div class="vr on"><span>Subject line</span><span class="pill w">Angle B</span></div><div class="vr"><span>Subject line</span><span class="pill">Angle C</span></div>
+            <div class="mail"><div class="sk w" style="width:38%"></div><div class="sk" style="width:92%"></div><div class="sk" style="width:84%"></div><div class="sk" style="width:90%"></div><div class="sk" style="width:46%"></div></div>
+          </div>
+        </article>
+        <article class="panel p3">
+          <div class="pl"><h3>Launch &amp; Inbox Health Management</h3><p class="sub">We deploy campaigns with complete deliverability and reputation safeguards.</p>
+            <ul>
+              <li><b>Brand Insulation</b>We handle campaign dispatch through secure, isolated protocols so your core company assets remain completely untouched and protected.</li>
+              <li><b>Primary Delivery</b>Continuous health monitoring guarantees high deliverability, ensuring your messages skip the junk folder and land directly in primary inboxes.</li>
+              <li><b>Controlled Pacing</b>We carefully pace volume to maintain flawless account health and maximize open rates.</li>
+            </ul></div>
+          <div class="pr" aria-hidden="true">
+            <div class="vr on"><b>Isolated sending</b><span class="pill w">Active</span></div>
+            <div class="vr col"><b>Inbox health</b><div class="meter" style="--w:94%"></div></div>
+            <div class="vr col"><b>Primary placement</b><div class="meter" style="--w:86%"></div></div>
+            <div class="vr col"><b>Controlled pacing</b><div class="meter" style="--w:62%"></div></div>
+          </div>
+        </article>
+        <article class="panel p4">
+          <div class="pl"><h3>Daily Inbox Triage &amp; Calendar Bookings</h3><p class="sub">We handle all the back-and-forth so you only show up for sales calls.</p>
+            <ul>
+              <li><b>Daily Reply Management</b>Our team monitors incoming replies every day, filtering out out-of-office notes and unqualified responses.</li>
+              <li><b>Objection Handling</b>Interested prospects are answered promptly with clear, helpful responses to guide them toward a call.</li>
+              <li><b>Direct Calendar Routing</b>Qualified leads are routed straight to your booking link, putting warm sales meetings directly onto your calendar.</li>
+            </ul></div>
+          <div class="pr" aria-hidden="true">
+            <div class="cal"><em>MON</em><em>TUE</em><em>WED</em><em>THU</em><em>FRI</em><i></i><i class="f"></i><i></i><i class="hit"></i><i></i><i class="f"></i><i></i><i class="f"></i><i></i><i></i></div>
+            <div class="vr on"><b>Qualified lead</b><span class="pill w">Call booked</span></div>
+            <div class="vr"><span>Out of office</span><span class="pill">Filtered</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="samples">
+  <div class="wrap">
+    <div class="head"><h2 class="grad">See the strategy behind every campaign.</h2><p>From audience research to messaging angles and campaign execution, here’s how we build targeted outbound systems for B2B businesses.</p></div>
+
+    <div class="sp-grid">
+      <button class="sp-card" type="button" data-sheet="sheet-targeting" aria-haspopup="dialog">
+        <span class="sp-vis" style="--v1:#dbe8ff;--v2:#e9e4fb" aria-hidden="true">
+          <i class="sp-demo">Sample</i>
+          <span class="mini">
+            <span class="r"><b>11–50</b><span>B2B SaaS</span><em class="sp-st ok">Qualified</em></span>
+            <span class="r"><b>51–200</b><span>DevTools</span><em class="sp-st ok">Qualified</em></span>
+            <span class="r"><b>1–10</b><span>Pre-revenue</span><em class="sp-st no">Excluded</em></span>
+          </span>
+        </span>
+        <span class="sp-txt"><span class="sp-h">Targeting</span><span class="sp-p">Sample ICP and prospect qualification.</span><span class="sp-go">View sample <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></span>
+      </button>
+
+      <button class="sp-card" type="button" data-sheet="sheet-messaging" aria-haspopup="dialog">
+        <span class="sp-vis" style="--v1:#ffe6d6;--v2:#f6dff0" aria-hidden="true">
+          <i class="sp-demo">Sample</i>
+          <span class="mini b2"></span><span class="mini b1"></span>
+          <span class="mini f"><span class="sj">Scaling outbound at <span class="sp-tok">{{company}}</span></span><span class="ln"></span><span class="ln s"></span><span><span class="sp-pill">Day 1</span></span></span>
+        </span>
+        <span class="sp-txt"><span class="sp-h">Messaging</span><span class="sp-p">Sample email sequences and campaign angles.</span><span class="sp-go">View sample <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></span>
+      </button>
+
+      <button class="sp-card" type="button" data-sheet="sheet-execution" aria-haspopup="dialog">
+        <span class="sp-vis" style="--v1:#d8f1e4;--v2:#dbe8ff" aria-hidden="true">
+          <i class="sp-demo">Demo data</i>
+          <span class="mini">
+            <span class="mb"><b>Efficiency</b><span class="sp-bar"><i style="--w:100%;--c:#007aff"></i></span></span>
+            <span class="mb"><b>Growth</b><span class="sp-bar"><i style="--w:83%;--c:#34c759"></i></span></span>
+            <span class="mb"><b>Risk</b><span class="sp-bar"><i style="--w:50%;--c:#ff9500"></i></span></span>
+          </span>
+        </span>
+        <span class="sp-txt"><span class="sp-h">Execution</span><span class="sp-p">Campaign workflow and reporting preview.</span><span class="sp-go">View sample <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></span>
+      </button>
+    </div>
+    <p class="sp-note">Every example here is an illustrative sample with demo data. None of it represents client results or a claim of campaign performance.</p>
+
+    <div class="dock-wrap">
+      <p class="dock-h">Tools we use</p>
+      <ul class="dock" aria-label="Tools we use">
+        <li><span class="ic logo" aria-hidden="true"><img src="assets/tools/clay.png" alt="" width="60" height="60" loading="lazy"></span><span class="lb">Clay</span></li>
+        <li><span class="ic logo" aria-hidden="true"><img src="assets/tools/apollo.png" alt="" width="60" height="60" loading="lazy"></span><span class="lb">Apollo</span></li>
+        <li><span class="ic logo" aria-hidden="true"><img src="assets/tools/instantly.png" alt="" width="60" height="60" loading="lazy"></span><span class="lb">Instantly</span></li>
+        <li><span class="ic logo" aria-hidden="true"><img src="assets/tools/hubspot.png" alt="" width="60" height="60" loading="lazy"></span><span class="lb">HubSpot</span></li>
+        <li><span class="ic logo" aria-hidden="true"><img src="assets/tools/aerosend.png" alt="" width="60" height="60" loading="lazy"></span><span class="lb">Aerosend</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Sheets -->
+<dialog class="sheet" id="sheet-targeting" aria-labelledby="sheet-targeting-t">
+ <div class="sheet-win">
+  <div class="sheet-bar"><div class="sheet-dots"><button type="button" class="sheet-close" aria-label="Close sample" data-close></button><i aria-hidden="true"></i><i aria-hidden="true"></i></div><h3 class="sheet-title" id="sheet-targeting-t">Targeting: sample ICP and prospect research</h3><button type="button" class="sheet-done" data-close>Done</button></div>
+  <div class="sheet-body">
+    <div><h3 class="sh">Who we’d reach, and why now.</h3><p class="sh-p">A sample audience for a B2B SaaS client, broken into segments with the signal that makes each one worth contacting.</p></div>
+    <div class="sp-demo-banner"><span class="sp-badge">Demo</span><span>Sample segments for an illustrative audience. This is not a client list.</span></div>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th scope="col">Company size</th><th scope="col">Industry</th><th scope="col">Buyer role</th><th scope="col">Buying signal</th><th scope="col">Qualification</th></tr></thead>
+      <tbody>
+        <tr><td>11–50 employees</td><td>B2B SaaS</td><td>Founder / CEO</td><td>Hiring a first sales rep</td><td><em class="sp-st ok">Qualified</em></td></tr>
+        <tr><td>11–50 employees</td><td>Vertical SaaS</td><td>Head of Growth</td><td>New product launch</td><td><em class="sp-st ok">Qualified</em></td></tr>
+        <tr><td>51–200 employees</td><td>DevTools</td><td>VP Sales</td><td>Recent funding round</td><td><em class="sp-st ok">Qualified</em></td></tr>
+        <tr><td>51–200 employees</td><td>Fintech SaaS</td><td>Head of Revenue</td><td>Sales leadership change</td><td><em class="sp-st warn">Needs review</em></td></tr>
+        <tr><td>201–500 employees</td><td>Martech</td><td>CRO</td><td>Expanding to a new market</td><td><em class="sp-st ok">Qualified</em></td></tr>
+        <tr><td>1–10 employees</td><td>Pre-revenue SaaS</td><td>Founder</td><td>No active signal</td><td><em class="sp-st no">Excluded</em></td></tr>
+      </tbody></table></div>
+    <div style="display:grid;gap:12px"><p class="sh-s">Qualification criteria</p>
+      <ul class="crit"><li>Sells to businesses, with a clearly defined buyer</li><li>Sales led by a founder or a small team</li><li>A buying signal within the last 90 days</li><li>Verified contact that matches the buyer role</li><li>Not an existing customer or a competitor</li></ul></div>
+    <p class="sp-cap">Every campaign starts with a defined audience and a clear reason to reach out.</p>
+  </div>
+ </div>
+</dialog>
+
+<dialog class="sheet" id="sheet-messaging" aria-labelledby="sheet-messaging-t">
+ <div class="sheet-win">
+  <div class="sheet-bar"><div class="sheet-dots"><button type="button" class="sheet-close" aria-label="Close sample" data-close></button><i aria-hidden="true"></i><i aria-hidden="true"></i></div><h3 class="sheet-title" id="sheet-messaging-t">Messaging: sample sequence and angles</h3><button type="button" class="sheet-done" data-close>Done</button></div>
+  <div class="sheet-body">
+    <div><h3 class="sh">Copy built around one buyer pain point.</h3><p class="sh-p">A sample campaign for an agency targeting B2B SaaS founders. Placeholders like <span class="sp-tok">{{company}}</span> are filled in per prospect.</p></div>
+    <div class="seg" role="tablist" aria-label="Messaging samples"><span class="seg-thumb" aria-hidden="true"></span>
+      <button type="button" role="tab" id="t-seq" aria-selected="true" aria-controls="p-seq">Sequence</button>
+      <button type="button" role="tab" id="t-ang" aria-selected="false" aria-controls="p-ang" tabindex="-1">Angles</button>
+      <button type="button" role="tab" id="t-cpy" aria-selected="false" aria-controls="p-cpy" tabindex="-1">Sample email</button>
+    </div>
+
+    <div class="sp-panel" id="p-seq" role="tabpanel" aria-labelledby="t-seq">
+      <div class="ms-list">
+        <div class="ms"><span class="ms-day">Day 1</span><div class="ms-card"><span><span class="sp-pill">Angle 1: Operational bottleneck</span></span>
+          <div class="ms-subj">Subject: Scaling outbound at <span class="sp-tok">{{company}}</span></div>
+          <div class="ms-body">Hi <span class="sp-tok">{{first_name}}</span>, <span class="sp-hl hl-a">as SaaS teams grow, building a consistent outbound pipeline can become difficult without adding more work for the sales team.</span> <span class="sp-hl hl-b">We run the prospect research, email campaigns and reply management so your team can focus on qualified sales conversations.</span> <span class="sp-hl hl-c">Would it be useful to see how we’d approach outbound for <span class="sp-tok">{{company}}</span>?</span></div></div></div>
+        <div class="legend" style="--c:0"><span style="--c:rgba(0,113,227,.45)">Opening hook</span><span style="--c:rgba(52,199,89,.6)">Personalized value</span><span style="--c:rgba(255,149,0,.7)">Low-friction ask</span></div>
+        <div class="ms"><span class="ms-day">Day 3</span><div class="ms-card"><span><span class="sp-pill">Angle 2: Growth</span></span>
+          <div class="ms-subj">Subject: Another way to add pipeline at <span class="sp-tok">{{company}}</span></div>
+          <div class="ms-body">Hi <span class="sp-tok">{{first_name}}</span>, following up with a different thought. Referrals and inbound can stall once a company outgrows its network, and outbound can add a steady stream of relevant conversations. Open to a short chat about whether it fits <span class="sp-tok">{{company}}</span>?</div></div></div>
+        <div class="ms"><span class="ms-day">Day 6</span><div class="ms-card"><span><span class="sp-pill">Angle 3: Risk reduction</span></span>
+          <div class="ms-subj">Subject: Outbound without risking your domain</div>
+          <div class="ms-body">Hi <span class="sp-tok">{{first_name}}</span>, one concern with cold email is sender reputation. We use isolated sending infrastructure and controlled volume to help protect your main domain. Want me to outline how that would work for <span class="sp-tok">{{company}}</span>?</div></div></div>
+        <div class="ms"><span class="ms-day">Day 10</span><div class="ms-card"><span><span class="sp-pill">Follow-up: Close the loop</span></span>
+          <div class="ms-subj">Subject: Should I close the loop?</div>
+          <div class="ms-body">Hi <span class="sp-tok">{{first_name}}</span>, I’ll stop here so I don’t clutter your inbox. If outbound becomes a priority, reply and I’ll send a short outline for <span class="sp-tok">{{company}}</span>.</div></div></div>
+      </div>
+      <p class="sp-cap">A sample four-step outbound sequence built around a specific buyer pain point.</p>
+    </div>
+
+    <div class="sp-panel" id="p-ang" role="tabpanel" aria-labelledby="t-ang" hidden>
+      <div class="ag">
+        <div class="ag-t" style="--bg:#e8f1ff;--a:#5ac8fa;--b:#007aff"><span class="ag-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><h4>Efficiency angle</h4><p>Focus on time lost to manual workflows.</p><div class="ag-s">Sample subject<b>Fewer hours spent on manual outreach</b></div></div>
+        <div class="ag-t" style="--bg:#e6f7ec;--a:#6fe08a;--b:#2fb250"><span class="ag-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l5-5 4 4 7-8"/><path d="M15 8h5v5"/></svg></span><h4>Growth angle</h4><p>Focus on a relevant growth bottleneck.</p><div class="ag-s">Sample subject<b>Where pipeline stalls after referrals</b></div></div>
+        <div class="ag-t" style="--bg:#fff1e0;--a:#ffc15e;--b:#ff9500"><span class="ag-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.3-7 9.5-4.1-2.2-7-5.3-7-9.5V6z"/></svg></span><h4>Risk-reduction angle</h4><p>Focus on reducing a specific operational risk.</p><div class="ag-s">Sample subject<b>Scaling outbound without exposing your domain</b></div></div>
+      </div>
+      <p class="sp-cap">We develop distinct messaging hypotheses instead of sending the same generic pitch to everyone.</p>
+    </div>
+
+    <div class="sp-panel" id="p-cpy" role="tabpanel" aria-labelledby="t-cpy" hidden>
+      <div class="cp">
+        <div class="cp-hd"><div><strong>Sample campaign</strong><small>Audience: B2B SaaS founders · Illustrative example</small></div><span class="sp-badge">Demo</span></div>
+        <span><span class="sp-pill">Angle 1: Operational bottleneck</span></span>
+        <div class="cp-text" id="cp-text"><span class="sj">Subject: Scaling outbound at {{company}}</span>Hi {{first_name}},
+
+As SaaS teams grow, building a consistent outbound pipeline can become difficult without adding more work for the sales team.
+
+We run the prospect research, email campaigns and reply management so your team can focus on qualified sales conversations.
+
+Would it be useful to see how we’d approach outbound for {{company}}?
+
+{{sender_name}}</div>
+        <div class="cp-ft"><p>This is illustrative copy, not a claim of proven campaign performance.</p><button type="button" class="btn sm" data-copy="cp-text" aria-live="polite">Copy sample</button></div>
+      </div>
+    </div>
+  </div>
+ </div>
+</dialog>
+
+<dialog class="sheet" id="sheet-execution" aria-labelledby="sheet-execution-t">
+ <div class="sheet-win">
+  <div class="sheet-bar"><div class="sheet-dots"><button type="button" class="sheet-close" aria-label="Close sample" data-close></button><i aria-hidden="true"></i><i aria-hidden="true"></i></div><h3 class="sheet-title" id="sheet-execution-t">Execution: workflow and reporting preview</h3><button type="button" class="sheet-done" data-close>Done</button></div>
+  <div class="sheet-body">
+    <div><h3 class="sh">How we run it, and how we decide what to change.</h3><p class="sh-p">A sample reporting view. We track delivery health first, then replies and meetings, and compare angles against each other.</p></div>
+    <ul class="wf" aria-label="Campaign workflow"><li><span>Onboarding</span></li><li><span>Launch</span></li><li><span>Optimization</span></li><li><span>Reporting</span></li></ul>
+    <div class="sp-demo-banner"><span class="sp-badge">Demo data</span><span>Every figure below is illustrative. It does not come from a client campaign.</span></div>
+    <div class="mt-grid">
+      <div class="mt"><small>Delivery health</small><strong class="ok">Healthy</strong><div class="sp-bar"><i style="--w:94%;--c:#34c759"></i></div></div>
+      <div class="mt"><small>Positive replies</small><strong>14</strong></div>
+      <div class="mt"><small>Qualified meetings</small><strong>5</strong></div>
+      <div class="mt"><small>Active campaigns</small><strong>3</strong></div>
+    </div>
+    <div class="sp-cmp" role="table" aria-label="Campaign comparison, demo data">
+      <div class="cr h" role="row"><span role="columnheader">Campaign</span><span role="columnheader">Share of positive replies</span><span role="columnheader">Positive replies</span><span role="columnheader">Meetings</span></div>
+      <div class="cr" role="row"><b role="cell">Efficiency angle</b><span class="sp-bar" role="cell"><i style="--w:100%;--c:#007aff"></i></span><span role="cell">6</span><span role="cell">2</span></div>
+      <div class="cr" role="row"><b role="cell">Growth angle</b><span class="sp-bar" role="cell"><i style="--w:83%;--c:#34c759"></i></span><span role="cell">5</span><span role="cell">2</span></div>
+      <div class="cr" role="row"><b role="cell">Risk-reduction angle</b><span class="sp-bar" role="cell"><i style="--w:50%;--c:#ff9500"></i></span><span role="cell">3</span><span role="cell">1</span></div>
+    </div>
+    <div style="display:grid;gap:10px"><p class="sh-s">Sample optimization decisions</p>
+      <ul class="dec"><li>Keep the efficiency angle running and test a shorter subject line.</li><li>Rewrite the growth angle’s opening line and hold volume steady.</li><li>Narrow the risk-reduction angle to a more specific audience before scaling it.</li></ul></div>
+    <p class="sp-cap">A preview of how we measure campaign health and make optimization decisions.</p>
+  </div>
+ </div>
+</dialog>
+
+<section id="about">
+<div class="wrap bd-grid">
+  <div class="bd-col">
+    <div class="bd-swing">
+      <div class="bd-strap" aria-hidden="true"></div>
+      <div class="bd-persp">
+        <div class="bd-tilt">
+          <div class="bd-card" id="bd-card">
+            <div class="bd-face bd-front">
+              <span class="bd-slot" aria-hidden="true"></span>
+              <div class="bd-top"><img class="bd-mark" src="assets/logo.png" alt="" width="30" height="30"><span class="bd-brand">Pareto Pipeline</span>
+                <svg class="bd-nfc" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7.5a6.5 6.5 0 010 9M12 5a10 10 0 010 14M16 2.5a13.5 13.5 0 010 19"/></svg></div>
+              <figure class="bd-photo"><img src="assets/sofia.jpg" alt="Sofia Martinez, founder of Pareto Pipeline" loading="lazy" width="880" height="1100"></figure>
+              <div class="bd-id"><strong>Sofia Martinez</strong><span>Founder</span></div>
+              <div class="bd-meta"><div><small>ID</small><b>PP-0001</b></div><div><small>Team</small><b>Outbound</b></div></div>
+              <div class="bd-bar" aria-hidden="true"></div>
+            </div>
+            <div class="bd-face bd-back" aria-hidden="true">
+              <span class="bd-slot" aria-hidden="true"></span>
+              <div class="bd-bk-mid"><img class="bd-mark big" src="assets/logo.png" alt="" width="104" height="104"><b>Pareto Pipeline</b><span>Done-for-you cold email</span></div>
+              <div class="bd-bar" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bd-clip" aria-hidden="true"></div>
+    </div>
+    <button type="button" class="bd-flip" aria-controls="bd-card" aria-pressed="false" aria-label="Flip the badge over"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 01-14 5.3M4 12a8 8 0 0114-5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg><span>Flip badge</span></button>
+  </div>
+
+  <div class="bd-copy">
+    <p class="kicker">Meet the founder</p>
+    <h2 class="grad">Built by an operator who’s been in your shoes.</h2>
+    <div class="abt-txt">
+      <p class="hi">Hey, I'm Sofia Martinez—founder of Pareto Pipeline.</p>
+      <p>I started this desk because while running my own firm, I found myself spending hours every single day writing 20 to 30 manual emails just to keep pipeline moving. When LinkedIn started constantly throttling accounts and restricting outreach, I knew I needed a clean, high-volume cold email engine that could scale fast without taking over my entire work week.</p>
+      <p class="pull">I couldn't find an agency that didn't just spam people or risk my domain, so I engineered my own system.</p>
+      <p>I built Pareto Pipeline to give founders what I wished I had back then: a reliable, hands-free acquisition desk that delivers qualified sales calls without the tech headaches, lost bandwidth, or messy spam.</p>
+    </div>
+    <div class="abt-widgets">
+      <div class="wg wg-before">
+        <div class="wg-hd"><i class="wg-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></i>Before</div>
+        <div class="wg-num">20–30</div>
+        <p class="wg-cap">manual emails, every single day</p>
+      </div>
+      <div class="wg wg-now">
+        <div class="wg-hd"><i class="wg-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Now</div>
+        <div class="wg-num">100%</div>
+        <p class="wg-cap">hands-free</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="head"><h2 class="grad">Simple, transparent pricing</h2></div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Strategy Map</h3><div class="price">Free</div>
+        <p>We'll work with you to map out your test plan, no commitment required.</p>
+        <ul><li>Offer economics check</li><li>Offer positioning for cold</li><li>Test cost &amp; timeline</li><li>Prioritized test map</li></ul>
+        <a href="#book" class="btn ghost block">Book a Strategy Call</a>
+      </div>
+      <div class="plan hot">
+        <h3>Flagship Plan</h3><div class="price">$5,000 <span>/ mo</span></div>
+        <p>Designed for steady B2B lead generation and consistent deal flow.</p>
+        <ul><li>Clean Research &amp; Ideal Buyer List Building</li><li>Full Done-For-You Campaign Operations</li><li>Custom Plain-Text Copywriting &amp; Testing</li><li>Daily Email Management &amp; Reply Triage</li><li>Full Brand &amp; Domain Safety Protection</li></ul>
+        <a href="#book" class="btn block">Get Started Today</a>
+      </div>
+      <div class="plan">
+        <h3>Enterprise Plan</h3><div class="price">$7,000 <span>/ mo</span></div>
+        <p>Built for high-volume outreach and deeper market saturation.</p>
+        <ul><li>Everything in the Flagship Plan</li><li>Scaled Outreach Volume &amp; Capacity</li><li>High-Volume Lead Data &amp; Scrubbing</li><li>Multiple Message Angles &amp; Audience Tests</li><li>Priority Meeting Booking &amp; Management</li></ul>
+        <a href="#book" class="btn ghost block">Inquire for Enterprise</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head"><h2 class="grad">Frequently asked questions</h2><p>Straight answers about how the service works, what we can and can’t promise, and who owns what.</p></div>
+    <div class="abt-win fq-win">
+      <div class="abt-bar" aria-hidden="true"><div class="abt-dots"><i></i><i></i><i></i></div><span class="abt-title">Frequently asked questions</span></div>
+      <div class="fq-body">
+        <aside class="fq-side">
+          <label class="fq-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg><input type="search" id="fq-search" placeholder="Search" aria-label="Search questions" autocomplete="off"></label>
+          <div class="fq-cats" role="group" aria-label="Question categories">
+<button type="button" class="fq-cat" data-cat="all" aria-pressed="true"><i class="fq-ic" style="--a:#a1a1a6;--b:#636366"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14"/></svg></i><span class="fq-cn">All questions</span><span class="fq-n"></span></button>
+<button type="button" class="fq-cat" data-cat="start" aria-pressed="false"><i class="fq-ic" style="--a:#5ac8fa;--b:#007aff"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span class="fq-cn">Getting started</span><span class="fq-n"></span></button>
+<button type="button" class="fq-cat" data-cat="outreach" aria-pressed="false"><i class="fq-ic" style="--a:#ffc15e;--b:#ff9500"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></i><span class="fq-cn">Outreach and inboxes</span><span class="fq-n"></span></button>
+<button type="button" class="fq-cat" data-cat="results" aria-pressed="false"><i class="fq-ic" style="--a:#6fe08a;--b:#2fb250"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l5-5 4 4 7-8"/><path d="M15 8h5v5"/></svg></i><span class="fq-cn">Results and reporting</span><span class="fq-n"></span></button>
+<button type="button" class="fq-cat" data-cat="legal" aria-pressed="false"><i class="fq-ic" style="--a:#c78bff;--b:#8944d6"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8.5 11V8a3.5 3.5 0 017 0v3"/></svg></i><span class="fq-cn">Pricing and legal</span><span class="fq-n"></span></button>
+          </div>
+        </aside>
+        <div class="fq-main">
+          <h3 class="fq-title" id="fq-title">All questions</h3>
+          <p class="fq-count" id="fq-count" aria-live="polite">15 questions</p>
+          <div class="fq-list"><div class="fq-in">
+<div class="fq-item" data-cat="start"><h4 class="fq-q"><button type="button" id="fq-q1" aria-expanded="false" aria-controls="fq-a1"><span>What does 100% done-for-you cold email mean?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a1" role="region" aria-labelledby="fq-q1"><div><p>We manage the outbound email process end to end, including prospect research, list building, infrastructure setup, copywriting, campaign execution, follow-ups and ongoing optimization. Reply handling and appointment booking are included when specified in your package.</p></div></div></div>
+<div class="fq-item" data-cat="start"><h4 class="fq-q"><button type="button" id="fq-q2" aria-expanded="false" aria-controls="fq-a2"><span>What do you need from us to get started?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a2" role="region" aria-labelledby="fq-q2"><div><p>We need to understand your offer, ideal customers, pricing, differentiators, sales process and goals. We’ll guide you through onboarding, gather the necessary information and work with you to approve the strategy before launch.</p></div></div></div>
+<div class="fq-item" data-cat="start"><h4 class="fq-q"><button type="button" id="fq-q3" aria-expanded="false" aria-controls="fq-a3"><span>How soon can we launch?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a3" role="region" aria-labelledby="fq-q3"><div><p>Timelines depend on onboarding, infrastructure readiness, targeting complexity and approvals. We establish a launch plan during onboarding and prioritize proper setup and quality assurance over rushing campaigns live.</p></div></div></div>
+<div class="fq-item" data-cat="results"><h4 class="fq-q"><button type="button" id="fq-q4" aria-expanded="false" aria-controls="fq-a4"><span>Do you guarantee leads or booked meetings?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a4" role="region" aria-labelledby="fq-q4"><div><p>We don’t promise specific results without a defined, substantiated basis. Outcomes depend on your offer, target market, data quality, messaging and sales process. Any contractual performance commitment will clearly define the target, qualification criteria and applicable terms.</p></div></div></div>
+<div class="fq-item" data-cat="outreach"><h4 class="fq-q"><button type="button" id="fq-q5" aria-expanded="false" aria-controls="fq-a5"><span>Do you handle replies and book meetings?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a5" role="region" aria-labelledby="fq-q5"><div><p>Reply monitoring and categorization are part of our agreed workflow. Prospect qualification, response handling and calendar booking depend on your selected package. We define these responsibilities before work begins.</p></div></div></div>
+<div class="fq-item" data-cat="outreach"><h4 class="fq-q"><button type="button" id="fq-q6" aria-expanded="false" aria-controls="fq-a6"><span>How do you choose which prospects to contact?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a6" role="region" aria-labelledby="fq-q6"><div><p>We define your ideal customer profile, identify relevant companies and decision-makers, enrich and validate contact information, and segment prospects based on fit and relevant business signals.</p></div></div></div>
+<div class="fq-item" data-cat="outreach"><h4 class="fq-q"><button type="button" id="fq-q7" aria-expanded="false" aria-controls="fq-a7"><span>Will cold emails reach the inbox?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a7" role="region" aria-labelledby="fq-q7"><div><p>We configure appropriate email authentication, monitor sending reputation, validate prospect data and follow responsible sending practices. These measures help manage deliverability, but no provider can guarantee inbox placement.</p></div></div></div>
+<div class="fq-item" data-cat="outreach"><h4 class="fq-q"><button type="button" id="fq-q8" aria-expanded="false" aria-controls="fq-a8"><span>What makes your service different from using cold email software ourselves?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a8" role="region" aria-labelledby="fq-q8"><div><p>Software provides the infrastructure. Our service provides the research, strategy, campaign creation, execution, monitoring and optimization needed to operate the system. You don’t have to manage the day-to-day outbound workflow yourself.</p></div></div></div>
+<div class="fq-item" data-cat="legal"><h4 class="fq-q"><button type="button" id="fq-q9" aria-expanded="false" aria-controls="fq-a9"><span>How much does your service cost?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a9" role="region" aria-labelledby="fq-q9"><div><p>Pricing depends on campaign scope, target market complexity, sending infrastructure and the level of reply management or appointment setting required. We’ll outline the deliverables, fees and any additional costs before you commit.</p></div></div></div>
+<div class="fq-item" data-cat="legal"><h4 class="fq-q"><button type="button" id="fq-q10" aria-expanded="false" aria-controls="fq-a10"><span>Do we need to provide our own email domains and software?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a10" role="region" aria-labelledby="fq-q10"><div><p>That depends on the agreed setup. We’ll explain which infrastructure we configure, which subscriptions are included, who owns the assets and which expenses are billed separately before onboarding.</p></div></div></div>
+<div class="fq-item" data-cat="results"><h4 class="fq-q"><button type="button" id="fq-q11" aria-expanded="false" aria-controls="fq-a11"><span>How do you measure performance?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a11" role="region" aria-labelledby="fq-q11"><div><p>We track relevant operational and campaign metrics, such as delivery health, bounce rates, positive replies, qualified meetings and meeting attendance where applicable. When CRM data is available, we can also assess pipeline contribution.</p></div></div></div>
+<div class="fq-item" data-cat="results"><h4 class="fq-q"><button type="button" id="fq-q12" aria-expanded="false" aria-controls="fq-a12"><span>What happens if a campaign isn’t performing?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a12" role="region" aria-labelledby="fq-q12"><div><p>We review targeting, offer-market fit, messaging, list quality and campaign health to identify likely issues. We then prioritize adjustments based on evidence and monitor the results rather than simply increasing sending volume.</p></div></div></div>
+<div class="fq-item" data-cat="legal"><h4 class="fq-q"><button type="button" id="fq-q13" aria-expanded="false" aria-controls="fq-a13"><span>Is cold email compliant with privacy and anti-spam laws?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a13" role="region" aria-labelledby="fq-q13"><div><p>Requirements vary by recipient location, audience and outreach purpose. We establish appropriate data-handling, suppression and opt-out procedures for the engagement, while defining each party’s legal responsibilities in the agreement.</p></div></div></div>
+<div class="fq-item" data-cat="start"><h4 class="fq-q"><button type="button" id="fq-q14" aria-expanded="false" aria-controls="fq-a14"><span>How much time will we need to spend managing the service?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a14" role="region" aria-labelledby="fq-q14"><div><p>Your involvement is primarily needed during onboarding, strategy and copy approvals, and sales meetings with qualified prospects. We’ll manage routine execution and provide agreed updates, subject to the responsibilities defined in your package.</p></div></div></div>
+<div class="fq-item" data-cat="legal"><h4 class="fq-q"><button type="button" id="fq-q15" aria-expanded="false" aria-controls="fq-a15"><span>Who owns the data, domains and campaign assets?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></h4><div class="fq-a" id="fq-a15" role="region" aria-labelledby="fq-q15"><div><p>Ownership, access, retention and transfer arrangements are specified in our agreement. We aim to make responsibilities clear from the beginning and handle client information according to the agreed terms and applicable requirements.</p></div></div></div>
+          </div></div>
+          <div class="fq-empty" id="fq-empty" hidden><strong>No matching questions</strong><span>Try a different word, or ask us directly on a call.</span><a href="#book" class="btn sm">Book a Discovery Call</a></div>
+          <p class="fq-more">Don’t see your question? <a href="#book">Book a Discovery Call</a> and ask us directly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="book" style="padding-top:40px">
+  <div class="wrap">
+    <div class="box">
+      <h2 class="grad">Ready to get consistent sales calls on your calendar?</h2>
+      <p class="sub">Book a quick 15-minute call. We’ll look at your target market together and show you how we’d set up your campaign.</p>
+      <!-- PASTE YOUR CALENDAR EMBED (Calendly, Cal.com, etc.) INSIDE THIS DIV AND DELETE THE PLACEHOLDER TEXT -->
+      <div class="cal-embed">
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/bodeofficial/discovery-call?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="#top" class="logo"><img src="assets/logo.png" alt="" width="30" height="30"><span>Pareto Pipeline</span></a>
+        <p>We help B2B companies generate qualified sales opportunities through targeted, done-for-you cold email outreach.</p>
+        <p>From prospect research and email infrastructure to campaign management and reply handling, we manage the outbound process so your team can focus on closing deals.</p>
+        <div class="ft-cta">
+          <h3>Ready to build your outbound pipeline?</h3>
+          <a href="#book" class="btn">Book a Discovery Call</a>
+        </div>
+      </div>
+      <nav class="ft-cols" aria-label="Footer">
+        <div class="ft-col"><div class="ft-grp"><h3>Services</h3><ul><li><a href="#how">Done-for-You Cold Email</a></li><li><a href="#why">B2B Lead Generation</a></li><li><a href="#how">Prospect Research &amp; List Building</a></li><li><a href="#how">Cold Email Campaign Management</a></li><li><a href="#how">Email Deliverability</a></li><li><a href="#how">Appointment Setting</a></li></ul></div></div>
+        <div class="ft-col"><div class="ft-grp"><h3>Company</h3><ul><li><a href="#about">About Us</a></li><li><a href="#how">Our Process</a></li><li><a href="#">Case Studies</a></li><li><a href="#">Client Results</a></li><li><a href="#book">Contact Us</a></li><li><a href="#">Careers</a></li></ul></div></div>
+        <div class="ft-col"><div class="ft-grp"><h3>Resources</h3><ul><li><a href="#">Blog &amp; Insights</a></li><li><a href="#">Cold Email Guides</a></li><li><a href="#faq">Frequently Asked Questions</a></li><li><a href="#">Outbound Strategy</a></li><li><a href="#">Email Deliverability Guide</a></li></ul></div></div>
+        <div class="ft-col">
+          <div class="ft-grp"><h3>Contact</h3><ul><li>Email: <a href="mailto:hello@paretopipeline.com">hello@paretopipeline.com</a></li></ul></div>
+          <div class="ft-grp"><h3>Legal</h3><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Cookie Policy</a></li><li><a href="#">Cookie Preferences</a></li><li><a href="#">Accessibility Statement</a></li></ul></div>
+        </div>
+      </nav>
+    </div>
+    <div class="ft-note">
+      <p>Results depend on factors including the client’s offer, target market, sales process and campaign execution. No specific business outcome is guaranteed unless expressly stated in a written agreement.</p>
+      <p>Third-party platforms and services used in our operations are subject to their respective terms, policies, availability, and limitations.</p>
+      <p>We aim to conduct outreach in accordance with applicable privacy, marketing, and anti-spam laws. Compliance requirements vary by jurisdiction, and clients remain responsible for their own legal obligations as applicable under their agreements with us.</p>
+    </div>
+    <div class="ft-base">© 2026 Pareto Pipeline. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var h=document.querySelector('header'),b=document.querySelector('.burger'),l=document.getElementById('links');
+  b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+  l.addEventListener('click',function(e){if(e.target.tagName==='A'){h.classList.remove('menu-open');b.setAttribute('aria-expanded',false)}});
+
+  /* cursor glow on cards */
+  document.querySelectorAll('.card,.plan').forEach(function(c){
+    c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')});
+  });
+
+  /* scroll: header material, active nav pill, hero window tilt */
+  var ui=document.querySelector('.stage .ui'),
+      secs=[].slice.call(document.querySelectorAll('main section[id]')),
+      links=[].slice.call(document.querySelectorAll('.links a')),ticking=false;
+  function onScroll(){
+    if(ticking)return;ticking=true;
+    requestAnimationFrame(function(){
+      ticking=false;
+      h.classList.toggle('scrolled',scrollY>8);
+      if(ui&&!rm&&innerWidth>700){
+        var r=ui.parentNode.getBoundingClientRect(),vh=innerHeight,
+            t=Math.min(1,Math.max(0,(r.top-vh*.12)/(vh*.7)));
+        ui.style.transform='perspective(1600px) rotateX('+(t*13).toFixed(2)+'deg) scale('+(1-t*.07).toFixed(4)+')';
+      }
+      var y=scrollY+innerHeight*.35,cur='';
+      secs.forEach(function(s){if(s.offsetTop<=y)cur=s.id});
+      links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur)});
+    });
+  }
+  addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();
+
+  /* count-up for widget numbers */
+  document.querySelectorAll('.wg-num').forEach(function(el){
+    var sr=document.createElement('span');sr.className='sr';sr.textContent=el.textContent;
+    el.setAttribute('aria-hidden','true');el.parentNode.insertBefore(sr,el.nextSibling);
+    el._final=el.textContent;
+  });
+  function count(el){
+    if(!el||rm)return;
+    var txt=el._final,nums=(txt.match(/\d+/g)||[]).map(Number),t0=null;
+    function f(ts){
+      if(t0===null)t0=ts;
+      var p=Math.min(1,(ts-t0)/1400),e=p===1?1:1-Math.pow(2,-10*p),i=0;
+      el.textContent=txt.replace(/\d+/g,function(){return Math.round(nums[i++]*e)});
+      if(p<1)requestAnimationFrame(f);
+    }
+    el.textContent=txt.replace(/\d+/g,'0');requestAnimationFrame(f);
+  }
+
+  /* reveal on scroll, staggered among siblings */
+  var t=document.querySelectorAll('.card,.plan,.cta .box,.rv,.head,.abt-photo,.abt-win,.wg,.ft-brand,.ft-col,.sp-card,.dock-wrap,.bd-copy>*:not(.abt-widgets)');
+  function show(el){
+    el.classList.add('in');
+    setTimeout(function(){el.classList.add('rv-done');el.style.transitionDelay=''},1600);
+    if(el.classList.contains('wg'))count(el.querySelector('.wg-num'));
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    t.forEach(function(el){
+      el.classList.add('rv');
+      var i=[].indexOf.call(el.parentNode.children,el);
+      el.style.transitionDelay=((i%4)*80)+'ms';
+      io.observe(el);
+    });
+  }else{t.forEach(function(el){el.classList.add('in')})}
+
+  /* tvOS-style tilt + glare (mouse only) */
+  if(!rm&&matchMedia('(hover:hover)').matches){
+    document.querySelectorAll('.abt-photo,.wg').forEach(function(el){
+      el.addEventListener('pointermove',function(e){
+        if(e.pointerType!=='mouse')return;
+        var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+        el.style.transform='perspective(900px) rotateX('+((.5-y)*9).toFixed(2)+'deg) rotateY('+((x-.5)*9).toFixed(2)+'deg) scale(1.025)';
+        el.style.setProperty('--gx',(x*100)+'%');el.style.setProperty('--gy',(y*100)+'%');
+        el.classList.add('tilt');
+      });
+      el.addEventListener('pointerleave',function(){el.style.transform='';el.classList.remove('tilt')});
+    });
+  }
+})();
+</script>
+<script>
+(function(){
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function place(seg){
+    var a=seg.querySelector('[aria-selected="true"]');
+    if(a){seg.style.setProperty('--x',a.offsetLeft+'px');seg.style.setProperty('--w',a.offsetWidth+'px')}
+  }
+  document.querySelectorAll('[data-sheet]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var d=document.getElementById(btn.getAttribute('data-sheet'));
+      d.showModal();
+      d.querySelectorAll('.seg').forEach(place);
+    });
+  });
+  document.querySelectorAll('dialog.sheet').forEach(function(d){
+    function close(){
+      if(rm){d.close();return}
+      d.classList.add('closing');
+      setTimeout(function(){d.classList.remove('closing');d.close()},200);
+    }
+    d.addEventListener('click',function(e){if(e.target===d||e.target.closest('[data-close]'))close()});
+    d.addEventListener('cancel',function(e){e.preventDefault();close()});
+  });
+  document.querySelectorAll('.seg').forEach(function(seg){
+    var tabs=[].slice.call(seg.querySelectorAll('[role="tab"]'));
+    function select(t){
+      tabs.forEach(function(x){
+        var on=x===t;
+        x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;
+        document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+      });
+      place(seg);
+    }
+    tabs.forEach(function(t,i){
+      t.addEventListener('click',function(){select(t)});
+      t.addEventListener('keydown',function(e){
+        var n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:-1;
+        if(n<0)return;
+        e.preventDefault();var x=tabs[(n+tabs.length)%tabs.length];select(x);x.focus();
+      });
+    });
+    addEventListener('resize',function(){place(seg)});
+  });
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var txt=document.getElementById(b.getAttribute('data-copy')).innerText.trim();
+      function ok(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy sample'},1800)}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok,fallback)}else fallback();
+      function fallback(){
+        var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';
+        document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(e){}document.body.removeChild(ta);
+      }
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var items=[].slice.call(document.querySelectorAll('.fq-item')),
+      cats=[].slice.call(document.querySelectorAll('.fq-cat')),
+      title=document.getElementById('fq-title'),count=document.getElementById('fq-count'),
+      empty=document.getElementById('fq-empty'),search=document.getElementById('fq-search'),
+      names={all:'All questions',start:'Getting started',outreach:'Outreach and inboxes',results:'Results and reporting',legal:'Pricing and legal'},
+      cur='all';
+  function setOpen(it,o){it.classList.toggle('open',o);it.querySelector('button').setAttribute('aria-expanded',o)}
+  cats.forEach(function(c){
+    var k=c.getAttribute('data-cat');
+    c.querySelector('.fq-n').textContent=k==='all'?items.length:items.filter(function(i){return i.getAttribute('data-cat')===k}).length;
+  });
+  function apply(){
+    var q=search.value.trim().toLowerCase(),n=0;
+    items.forEach(function(it){
+      var m=(cur==='all'||it.getAttribute('data-cat')===cur)&&(!q||it.textContent.toLowerCase().indexOf(q)>-1);
+      it.hidden=!m;if(m)n++;else setOpen(it,false);
+    });
+    cats.forEach(function(c){c.setAttribute('aria-pressed',(!q&&c.getAttribute('data-cat')===cur))});
+    title.textContent=q?'Search results':names[cur];
+    count.textContent=n+(n===1?' question':' questions');
+    empty.hidden=n>0;
+  }
+  items.forEach(function(it){
+    it.querySelector('button').addEventListener('click',function(){setOpen(it,!it.classList.contains('open'))});
+  });
+  cats.forEach(function(c){
+    c.addEventListener('click',function(){
+      cur=c.getAttribute('data-cat');search.value='';
+      items.forEach(function(it){setOpen(it,false)});apply();
+      var first=items.filter(function(i){return !i.hidden})[0];if(first)setOpen(first,true);
+    });
+  });
+  search.addEventListener('input',apply);
+  setOpen(items[0],true);apply();
+})();
+</script>
+<script>
+(function(){
+  var col=document.querySelector('.bd-col');if(!col)return;
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var card=document.getElementById('bd-card'),btn=col.querySelector('.bd-flip'),
+      front=card.querySelector('.bd-front'),back=card.querySelector('.bd-back'),
+      persp=col.querySelector('.bd-persp'),tilt=col.querySelector('.bd-tilt');
+  function flip(){
+    var f=card.classList.toggle('flipped');
+    btn.setAttribute('aria-pressed',f);
+    front.setAttribute('aria-hidden',f);back.setAttribute('aria-hidden',!f);
+  }
+  card.addEventListener('click',flip);btn.addEventListener('click',flip);
+  /* swing in when scrolled to */
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){col.classList.add('bd-on');io.disconnect()}})},{threshold:.25});
+    io.observe(col);
+  }else col.classList.add('bd-on');
+  /* tilt + glare toward cursor */
+  if(!rm&&matchMedia('(hover:hover)').matches){
+    persp.addEventListener('pointermove',function(e){
+      var r=persp.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+      tilt.style.transform='rotateY('+((x-.5)*24).toFixed(2)+'deg) rotateX('+((.5-y)*16).toFixed(2)+'deg)';
+      card.style.setProperty('--gx',(x*100)+'%');card.style.setProperty('--gy',(y*100)+'%');
+      card.querySelectorAll('.bd-face').forEach(function(f){f.style.setProperty('--gx',(x*100)+'%');f.style.setProperty('--gy',(y*100)+'%');f.style.setProperty('--gl',.9)});
+    });
+    persp.addEventListener('pointerleave',function(){
+      tilt.style.transform='';
+      card.querySelectorAll('.bd-face').forEach(function(f){f.style.setProperty('--gl',.35)});
+    });
+  }
+})();
+</script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">
+window.addEventListener('load',function(){
+  if(window.Calendly&&Calendly.initBadgeWidget){
+    Calendly.initBadgeWidget({url:'https://calendly.com/bodeofficial/discovery-call?hide_event_type_details=1&hide_gdpr_banner=1',text:'Let\'s chat!',color:'#0069ff',textColor:'#ffffff',branding:true});
+  }
+});
+/* hide the floating badge while the inline calendar is on screen */
+(function(){
+  var b=document.getElementById('book');if(!b||!('IntersectionObserver' in window))return;
+  new IntersectionObserver(function(es){es.forEach(function(e){document.body.classList.toggle('in-book',e.isIntersecting)})},{threshold:.25}).observe(b);
+})();
+</script>
+</body>
+</html>
